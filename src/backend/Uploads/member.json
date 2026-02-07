@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "m",
+    "budget": "m",
+    "position": "m",
+    "image": "http://localhost:8000/Uploads/members/aida.png"
+  },
+  {
+    "id": 2,
+    "name": "m",
+    "budget": "m",
+    "position": "T",
+    "image": "http://localhost:8000/Uploads/members/an_vu.png"
+  }
+]

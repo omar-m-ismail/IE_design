@@ -1,0 +1,567 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+html, body, #root, .home {
+  width: 100vw !important;
+  min-width: 100vw !important;
+  max-width: 100vw !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+.home-content,
+.projects_slide,
+.about_uss {
+  width: 100vw !important;
+  max-width: 100vw !important;
+}
+
+*
+
+.blueprint {
+  display: flex;
+  justify-content: center;
+}
+
+.blueprint img {
+  width: 85vw;
+  max-width: 1200px;
+}
+
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  background: #222;
+}
+
+/* =========================
+   ROOT / PAGE WRAPPER
+========================= */
+#root {
+  min-width: 100vw;
+  margin: 0 ;
+}
+.home{
+    min-width: 100% !important;
+  overflow-x: hidden;
+  margin-left: calc(-50vw+49vw);
+  margin-right: calc(-50vw+49vw);
+  border-style:solid ;
+  border-width: 2px;
+  border-color: #e5e5e5;
+}
+header{
+  min-width: 100vw;
+  background-color: #222;
+
+}
+.creative{
+  padding-left:3rem ;
+  position: absolute;left: 0;top: 72vh;
+    font-family: "Tan Mon Cheri", serif;
+  font-size: 5.7rem;
+  color: #f8f8f8;
+  overflow: visible;
+}
+.structure{
+    padding-right:3rem ;
+  position: absolute;right: 0;top: 84vh;
+    font-family: "Tan Mon Cheri", serif;
+  font-size: 5.7rem;
+  color: #f8f8f8;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+.home-content {
+  background-color: #222 ;
+  position: absolute;
+
+  overflow: hidden;
+
+  max-width: none;
+  margin-top: 25vw;
+  display: flex;
+  flex-direction: column;
+    transform: translateX(-2%);
+
+
+}
+.vid{
+  padding: 2rem;
+  padding-left: 5rem;
+}
+video{
+
+  max-width: 85vw ;
+}
+
+.gotoprojects,
+.gototeam {
+  text-decoration: underline;
+
+}
+
+/* =========================
+   BUTTONS
+========================= */
+/*.gotoprojects,
+.gototeam {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(0.6rem + 0.4vw) calc(1.2rem + 0.8vw);
+  background: #b2b4b6;
+  border-radius: 15% / 50%;
+  font-size: calc(1.1rem + 0.5vw);
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+}*/
+
+/* =========================
+   GALLERIES
+========================= */
+.projects_slide {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5rem;
+  width: 100vw;
+  height: 45vw;
+font-family: "Red Hat Display Heavy";
+color: aliceblue;
+
+
+  background-image: url("/aura.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about_uss{
+    background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+ padding: 1rem;
+ padding-left: 7.2rem;
+ padding-top: 5rem;
+  width: 100vw !important;
+  height: 50vw;
+
+color: black;
+
+    overflow: visible;
+}
+.about_uss .title{
+  font-size: 2.5rem;
+  gap: 0;
+
+    font-family: "Tan Mon Cheri", serif;
+    text-transform: capitalize;
+    padding-left: 3rem;
+}
+.about_uss .title h2{
+  padding: 0;
+  margin: 0;
+  padding-left: px;
+      overflow: visible;
+}
+.about_uss .yap{
+      background-color: #222;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5vw;
+ padding: 2.5rem;
+  color: #f8f8f8;
+  min-width: 95%;
+  text-align: justify;
+  overflow: visible;
+
+}
+.yap p{
+    text-align-last: left;
+    max-width: 35vw;
+      font-family: "Red Hat Display";
+}
+.projects_slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust opacity */
+  z-index: -1; /* behind content */
+}
+
+.projects_content {
+  display: flex;
+  flex-direction: column;/* or center */
+  gap: 3vh;
+  text-align: right;
+  max-width: 43vw;
+  padding: 2rem;
+  margin-left: 40vw; /* use margin, not padding, to shift layout */
+}
+.projects_content p{
+  font-family: "Red Hat Display" !important;
+  text-align: right !important;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(2rem + 1vw);
+  width: 100%;
+
+  margin-right:3vw;
+  left: 50%;
+  transform: translateX(-1%);
+}
+
+.mini {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(1.2rem + 1vw);
+  flex: 1;
+    transform: translateX(5%);
+    padding: 5vw;
+}
+
+/* =========================
+   FIGURES / CARDS
+========================= */
+.mini figure {
+    padding: 100px !important;
+  flex: 1 1 calc(33% - 3rem);
+  max-width: 26vw !important;
+  min-height: 18vw;
+  display: flex;
+  gap: 0 !important;
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  margin: 0 ;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  overflow: hidden !important;
+  text-align: left;
+  color: #f8f8f8;
+  background-color: #222 !important;
+  border-width: 2px !important;
+  border-color: #f8f8f8 !important;
+  border-style: solid;
+  font-family: "Tan Mon Cheri";
+}
+.mini figure img{
+  border-radius: 0 !important;
+}
+.mini figure div{
+      padding: 20px !important;
+}
+.mini figure div h4{
+font-family: "Red Hat Display";
+}
+.mini figure div h2{
+
+  font-size: larger;
+  text-transform: uppercase;
+}
+.mini figure div h6{
+font-family: "Red Hat Display";
+text-align: right;
+min-width: 100%;
+text-decoration: underline;
+padding-bottom: 30px;
+}
+
+/* =========================
+   IMAGES
+========================= */
+.gallery img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: calc(0.6rem + 0.3vw);
+}
+
+figure.team_fig img.team_pic {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.galleryy {
+  position: absolute;left: 0;top: 0;
+z-index: 0;
+  min-height: 85vh;
+    padding: 0;
+  margin: 0;
+
+  isolation: isolate;
+  min-width: 100vw !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-image: url("/page_top.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f8f8f8;
+
+
+}
+.galleryy::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust opacity */
+  z-index: -1; /* behind content */
+}
+
+.two_things{
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.galleryy span {
+  position: absolute; top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Red Hat Display";
+}
+.galleryy span img {
+
+  width: 500px;
+}
+
+.galleryy hr {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 90%;
+  opacity: 0.5;
+}
+
+.galleryy img {
+  width: 100%;
+  max-width: 200px;
+}
+.blueprint{
+  background-color: #e5e5e5;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.blueprint img{
+  max-width: 92vw;
+}
+.two_pics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.two_pics .pic{
+  max-width: 40vw;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.two_pics .pic img{
+  max-width: 40vw;
+  max-height: 30vw;
+}
+/* =========================
+   CONTACT SECTION
+========================= */
+.galleryyy {
+  display: flex;
+  flex-direction: column;
+justify-content: center ;
+align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: #f8f8f8;
+  background-image: url("office.png");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    width: 100vw;
+  width: 100vw;
+
+  left: 50%;
+ transform: translate(1%);
+  overflow: visible;
+
+}
+
+/* =========================
+   TEXT ALIGNMENT
+========================= */
+.gallery h2,
+.gallery h3,
+.gallery p {
+  text-align: left;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.home-footer {
+  position: absolute;
+  top:400vw;
+  margin: 0;
+  overflow: hidden;
+margin-bottom: 0;
+  padding: calc(2rem + 1vw) 0;
+  text-align: center;
+  justify-content: right;
+  font-family: 'Red Hat Display';
+min-width: 100vw;
+transform: translateX(-2.5%);
+}
+.galleryyy img{
+  margin-top: 350px;
+  width: 100%;
+  max-width: 100px;
+  max-height: 50vh;
+
+}
+
+.galleryyy hr{
+    border: 1px solid #f8f8f8;
+  width: 80%;
+  
+
+
+}
+.galleryyy .roooow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social_links{
+
+padding-top: 0;
+margin-top: 0;
+overflow: visible;
+}
+.linkedin,
+.insta{
+padding-top: 0!important;
+margin-top:0 !important;
+overflow: visible;
+}
+.linkedin img {
+  padding-top: 0!important;
+margin-top:0 !important;
+  width: 20px;
+  height: 20px;
+}
+.insta img {
+  padding-top: 0!important;
+margin-top:0 !important;
+  width: 20px;
+  height: 20px;
+}
+a{
+  margin: 1rem;
+}
+
+.galleryyy div{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.galleryyy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust opacity */
+  z-index: -1; /* behind content */
+}
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .home {
+    padding: calc(1rem + 2vw);
+  }
+
+  .home-content {
+    gap: calc(2.5rem + 1vw);
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mini figure {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-height: calc(30vw + 2rem);
+  }
+
+  .galleryy img {
+    max-width: 100%;
+  }
+}
+
+
+@font-face {
+  font-family: "Tan Mon Cheri";
+  src: url("/src/assets/fonts/tan-mon-cheri.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("/src/assets/fonts/RedHatDisplayRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Red Hat Display Heavy";
+  src: url("/src/assets/fonts/RedHatDisplayBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,261 @@
+/* -------------------- FULL CSS -------------------- */
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+
+.page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+background-color: #d4d4d4;
+font-family: "Red Hat Display";
+
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100vw;
+  align-items: stretch; 
+  min-width: 0;
+
+
+}
+
+/* COLUMN (backend grouping) */
+.collum {
+  display: flex;
+  flex-direction: column;  /* keeps grouping intact */
+  gap: 24px;
+  width: 100vw !important;            /* critical: stretch full width */
+  align-items: stretch; 
+  background-color: #D8D8D8;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+    margin: 0;
+  padding: 0;
+}
+.collumn {
+  display: flex;
+  flex-direction: column;  /* keeps grouping intact */
+  gap: 24px;
+  width: 100vw !important;            /* critical: stretch full width */
+  align-items: stretch; 
+  color: #f8f8f8;
+  background-color: #20252D;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin: 0;
+  padding: 0;
+
+}
+/* CARD ROWS */
+.card-left,
+.card-right {
+  display: flex;
+  width: 100%;            /* full width row */
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  transform: translateX(4%);
+    margin: 0;
+  padding: 0;
+}
+
+/* LEFT / RIGHT */
+.card-left { flex-direction: row-reverse; }
+.card-right { flex-direction: row; }
+
+/* IMAGE */
+.card-left img,
+.card-right img {
+  width: 40vw;
+  height: 40vw;
+  max-width: 50vw;
+  max-height: 50vw;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* TEXT */
+.card-left span,
+.card-right span {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+}
+.card-left{
+  padding-left: 5rem;
+  padding-right: 7rem;
+}
+.card-right{
+  padding-left: 2rem;
+  padding-right: 5rem;
+}
+
+.collum h2,
+.collum h3{
+  color: #1B4235;
+}
+
+.card-left h2,
+.card-right h2 { font-size: 2rem;
+text-transform: uppercase; 
+  font-family: "Red Hat Display Heavy";}
+
+.collum p{ color: #391B0B; line-height: 1.4; }
+
+.card-left h3,
+.card-right h3 { font-size: 0.95rem; 
+padding-top: 1.5rem;padding-bottom: 3rem;
+text-transform: uppercase;
+}
+
+.card-left h4,
+.card-right h4 { 
+text-transform: uppercase;
+}
+
+.card-left a,
+.card-right a { color: #007bff; text-decoration: none; }
+
+.card-left img,
+.card-right img { max-width: 44vw;
+border-radius: 0 !important;}
+.card-left1{
+  margin-top: 66.67vh;
+}
+.card-left a:hover,
+.card-right a:hover { text-decoration: underline; }
+
+.middle-image {
+  max-width: 100vw;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  overflow :visible;
+}
+
+
+.projects-footer {
+  position: absolute;
+  top:450vw;
+  margin: 0;
+  overflow: hidden;
+margin-bottom: 0;
+  padding: calc(2rem + 1vw) 0;
+  text-align: center;
+  justify-content: right;
+  font-family: 'Red Hat Display';
+min-width: 100vw;
+transform: translateX(-2.5%);
+}
+.galleryyy img{
+  margin-top: 350px;
+  width: 100%;
+  max-width: 100px;
+  max-height: 50vh;
+
+}
+
+.galleryyy hr{
+    border: 1px solid #f8f8f8;
+  width: 80%;
+  
+
+
+}
+.galleryyy .roooow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social_links{
+
+padding-top: 0;
+margin-top: 0;
+overflow: visible;
+}
+.linkedin,
+.insta{
+padding-top: 0!important;
+margin-top:0 !important;
+overflow: visible;
+}
+.linkedin img {
+  padding-top: 0!important;
+margin-top:0 !important;
+  width: 20px;
+  height: 20px;
+}
+.insta img {
+  padding-top: 0!important;
+margin-top:0 !important;
+  width: 20px;
+  height: 20px;
+}
+a{
+  margin: 1rem;
+}
+
+.galleryyy div{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.galleryyy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust opacity */
+  z-index: -1; /* behind content */
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  .card-left,
+  .card-right {
+    flex-direction: column;  /* stack image/text */
+    text-align: center;
+  }
+
+    .card-left img,
+  .card-right img {
+ width:160px;  /* stack image/text */
+ height:160px;
+  }
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("/src/assets/fonts/RedHatDisplayRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Red Hat Display Heavy";
+  src: url("/src/assets/fonts/RedHatDisplayBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
