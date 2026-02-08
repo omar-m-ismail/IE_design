@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Home() {
   const [data, setData] = useState(null);
@@ -111,6 +114,9 @@ residential spaces above.</p>
               </figure>
             ))}
           </div>
+                              <Link to="/projects" className="toprojects">
+  <h2>SEE MORE PROJECTS →</h2>
+</Link>
 
         </div>
 
@@ -124,7 +130,11 @@ residential spaces above.</p>
                     <div className="roooow">
                       <div>
  <h2>location</h2>
-  <p>{data.contact.address}</p>
+  <p> <FontAwesomeIcon icon={faLocationPin} />
+{data.contact.address}</p>
+  <p> <FontAwesomeIcon icon={faLocationPin} />
+675 Cochrane Drive East Tower 6th Floor,</p>
+        <p>Markham ON</p>
   <p>Tel: {data.contact.phone}</p>
   <p>{data.contact.email}</p>
 

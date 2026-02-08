@@ -264,6 +264,7 @@ async def upload_project(
     budget: str =Form(...),
     description: str = Form(...),
     status:str =Form(...),
+        scope:str =Form(...),
     file: UploadFile = File(...)
 ):
     # save image
@@ -282,6 +283,7 @@ async def upload_project(
         "budget": budget,
         "status": status,
         "description": description,
+        "scope":scope,
         "image": f"http://localhost:8000/Uploads/Projects/{file.filename}"
     }
 

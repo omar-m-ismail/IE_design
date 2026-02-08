@@ -1,6 +1,9 @@
 import "../projects.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -35,12 +38,12 @@ function chunkArray(arr) {
 return (
   <div className="page">
     <header>
-                    <Link to="/" className="gotoprojects">
-  Home →
-</Link>
+          <br />            
     </header>
   <div className="page-content">
-
+<Link to="/" className="tohome">
+Home →
+</Link>
 
 
 <div className="gallery">
@@ -58,6 +61,14 @@ return (
 {project.budget && <h3> Estimated Budget: {project.budget}</h3>}
 {project.status && <h3> status: {project.status}</h3>}
           <p>{project.description}</p>
+{project.scope && (
+  <p classname='scope' style={{ whiteSpace: "pre-line" }}>
+    <strong>Scope:</strong>{" "}
+    {project.scope}
+  </p>
+)}
+
+
 
 
         </span>
@@ -86,34 +97,54 @@ return (
       </div>
     ))}
   </div>
-  <div className="colum">
+<div className="colum">
   {projectChunks[2]?.map((project, idx) => (
     <div key={idx}>
-      {idx === 1 ? (
-        <div className="middle-image">
-          <img src="highelite_wide.png" alt="middle" />
-        </div>
-      ) : (
-        <div className={idx === 0 ?   "card-right" : "card-left1"}>
+
+      {/* Project 1 */}
+      {idx === 0 && (
+        <div className="card-right">
           <img src={project.image} alt={project.title} />
           <span>
             <h2>{project.title}</h2>
-                      <h4>{project.location}</h4>
-{project.budget && <h3> Estimated Budget: {project.budget}</h3>}
-{project.status && <h3> status: {project.status}</h3>}
+            <h4>{project.location}</h4>
+            {project.budget && <h3> Estimated Budget: {project.budget}</h3>}
+            {project.status && <h3> status: {project.status}</h3>}
             <p>{project.description}</p>
-
           </span>
         </div>
       )}
+
+      {/* Middle Image BETWEEN project 1 and project 2 */}
+      {idx === 0 && (
+        <div className="middle-image">
+          <img src="highelite_wide.png" alt="middle" />
+        </div>
+      )}
+
+      {/* Project 2 */}
+      {idx === 1 && (
+        <div className="card-left">
+          <img src={project.image} alt={project.title} />
+          <span>
+            <h2>{project.title}</h2>
+            <h4>{project.location}</h4>
+            {project.budget && <h3> Estimated Budget: {project.budget}</h3>}
+            {project.status && <h3> status: {project.status}</h3>}
+            <p>{project.description}</p>
+          </span>
+        </div>
+      )}
+
     </div>
   ))}
 </div>
+
 <div className="collumn">
     {projectChunks[3]?.map((project, idx) => (
       <div
         key={project.id}
-        className={idx === 1 ? "card-right" : "card-left"}
+        className={idx === 1 ? "card-left" : "card-right"}
       >
         <img src={project.image} alt={project.title} />
         <span>
@@ -129,7 +160,9 @@ return (
     ))}
   </div>
 </div>
-<img src="" alt="" />
+<div className="westdell">
+<img  src="westdell.png" alt="" />
+</div>
 </div>
       <footer className="projects-footer">
   <div className="galleryyy">
@@ -139,7 +172,11 @@ return (
     <div className="roooow">
       <div>
         <h2>location</h2>
-        <p>2C-1701 Richmond Street, London, Ontario.</p>
+        <p><FontAwesomeIcon icon={faLocationPin} />
+2C-1701 Richmond Street, London, Ontario.</p>
+        <p><FontAwesomeIcon icon={faLocationPin} />
+675 Cochrane Drive East Tower 6th Floor,</p>
+        <p>Markham ON</p>
         <p>Tel: +1 (519) 878-5488</p>
         <p>cs@creativestr.ca</p>
       </div>

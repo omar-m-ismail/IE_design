@@ -14,13 +14,22 @@
   top: 0;
   left: 0;
   min-height: 100%;
-background-color: #d4d4d4;
+  background-color: #D8D8D8;
 font-family: "Red Hat Display";
 
   width: 100vw;
   overflow: hidden;
+  transform: translateX(1%);
 }
-
+header{
+  background-color: #D8D8D8;
+  color: #20252D ;}
+.tohome{
+    color: #20252D;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-left: 7rem !important;
+  }
 /* GALLERY */
 .gallery {
   display: flex;
@@ -46,7 +55,9 @@ font-family: "Red Hat Display";
   margin-right: calc(50% - 50vw);
     margin: 0;
   padding: 0;
+  
 }
+.scope{}
 .collumn {
   display: flex;
   flex-direction: column;  /* keeps grouping intact */
@@ -60,14 +71,17 @@ font-family: "Red Hat Display";
   margin-right: calc(50% - 50vw);
   margin: 0;
   padding: 0;
+  padding-bottom: 1.4rem;
+  padding-top: 1.4rem;
 
 }
 /* CARD ROWS */
 .card-left,
-.card-right {
+.card-right,
+.card-right1 {
   display: flex;
   width: 100%;            /* full width row */
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 20px;
   padding: 16px;
@@ -77,17 +91,19 @@ font-family: "Red Hat Display";
   padding: 0;
 }
 
+
 /* LEFT / RIGHT */
 .card-left { flex-direction: row-reverse; }
-.card-right { flex-direction: row; }
+.card-right
+.card-right1 { flex-direction: row; }
 
 /* IMAGE */
 .card-left img,
 .card-right img {
-  width: 40vw;
+  width: 40vw !important;
   height: 40vw;
-  max-width: 50vw;
-  max-height: 50vw;
+  max-width: 44vw;
+  max-height: 44vw;
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
@@ -105,9 +121,13 @@ font-family: "Red Hat Display";
   padding-left: 5rem;
   padding-right: 7rem;
 }
-.card-right{
+.card-right,
+.card-right1{
   padding-left: 2rem;
   padding-right: 5rem;
+}
+.card-right p{
+  margin-right: 5rem;
 }
 
 .collum h2,
@@ -116,20 +136,23 @@ font-family: "Red Hat Display";
 }
 
 .card-left h2,
-.card-right h2 { font-size: 2rem;
+.card-right h2,
+.card-right1 h2 { font-size: 2rem;
 text-transform: uppercase; 
   font-family: "Red Hat Display Heavy";}
 
 .collum p{ color: #391B0B; line-height: 1.4; }
 
 .card-left h3,
-.card-right h3 { font-size: 0.95rem; 
+.card-right h3,
+.card-right1 h3 { font-size: 0.95rem; 
 padding-top: 1.5rem;padding-bottom: 3rem;
 text-transform: uppercase;
 }
 
 .card-left h4,
-.card-right h4 { 
+.card-right h4,
+.card-right1 h4{ 
 text-transform: uppercase;
 }
 
@@ -137,27 +160,72 @@ text-transform: uppercase;
 .card-right a { color: #007bff; text-decoration: none; }
 
 .card-left img,
-.card-right img { max-width: 44vw;
+.card-right img,
+.card-right1 img{ min-width: 4vw !important;
 border-radius: 0 !important;}
 .card-left1{
-  margin-top: 66.67vh;
+  margin-top: 66vh;
+    display: flex;
+  width: 100%;            /* full width row */
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  transform: translateX(4%);
+    margin: 0;
+  padding: 0;
 }
 .card-left a:hover,
 .card-right a:hover { text-decoration: underline; }
 
 .middle-image {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   max-width: 100vw;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  overflow :visible;
+  max-height: 66vh;  /* limits height */
+  width: 100%;
+  height: 66vh;      /* set fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 !important;
+}
+.page-content{
+  margin-bottom: 48vw;
 }
 
-
-.projects-footer {
+.middle-image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 0 !important;
+}
+.westdell {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  min-width: 100vw;
+    /* limits height */
+     /* set fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-5%);
+}
+.westdell img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+footer {
   position: absolute;
-  top:450vw;
+  top:400vw;
   margin: 0;
   overflow: hidden;
 margin-bottom: 0;
@@ -166,7 +234,13 @@ margin-bottom: 0;
   justify-content: right;
   font-family: 'Red Hat Display';
 min-width: 100vw;
-transform: translateX(-2.5%);
+transform: translateX(-1%);
+
+}
+.projects-footer{
+    position: absolute;
+  top:515vw;
+  margin: 0;
 }
 .galleryyy img{
   margin-top: 350px;
@@ -233,6 +307,8 @@ a{
   background: rgba(0, 0, 0, 0.5); /* adjust opacity */
   z-index: -1; /* behind content */
 }
+
+
 /* MOBILE */
 @media (max-width: 768px) {
   .card-left,

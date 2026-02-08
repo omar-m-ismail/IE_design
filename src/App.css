@@ -50,7 +50,7 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100vw;
-  background: #222;
+  background: #20252D;
 }
 
 /* =========================
@@ -71,7 +71,7 @@ body {
 }
 header{
   min-width: 100vw;
-  background-color: #222;
+  background-color: #20252D;
 
 }
 .creative{
@@ -94,7 +94,7 @@ header{
    MAIN CONTENT
 ========================= */
 .home-content {
-  background-color: #222 ;
+  background-color:#20252D ;
   position: absolute;
 
   overflow: hidden;
@@ -112,7 +112,7 @@ header{
   padding-left: 5rem;
 }
 video{
-
+ padding-left: 1rem;
   max-width: 85vw ;
 }
 
@@ -143,7 +143,7 @@ video{
    GALLERIES
 ========================= */
 .projects_slide {
-  background-color: #f8f8f8;
+  background-color: #d8d8d8;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -159,20 +159,21 @@ color: aliceblue;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transform: translateX(-0.1%);
 }
 .about_uss{
-    background-color: #f8f8f8;
+    background-color: #d8d8d8;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
  padding: 1rem;
- padding-left: 7.2rem;
+ padding-left: 5rem;
  padding-top: 5rem;
   width: 100vw !important;
   height: 50vw;
 
-color: black;
+color: #20252D;
 
     overflow: visible;
 }
@@ -191,18 +192,18 @@ color: black;
       overflow: visible;
 }
 .about_uss .yap{
-      background-color: #222;
+      background-color: #20252D;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   gap: 5vw;
- padding: 2.5rem;
+
   color: #f8f8f8;
   min-width: 95%;
   text-align: justify;
   overflow: visible;
-
+padding: 2.5rem;
 }
 .yap p{
     text-align-last: left;
@@ -426,6 +427,14 @@ align-items: center;
 
 }
 
+.toprojects{
+  font-family: "Tan Mon Cheri";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #CECFD0;
+  margin-left: 65vw;
+}
+
 /* =========================
    TEXT ALIGNMENT
 ========================= */
@@ -440,7 +449,7 @@ align-items: center;
 ========================= */
 .home-footer {
   position: absolute;
-  top:400vw;
+  top:710vw;
   margin: 0;
   overflow: hidden;
 margin-bottom: 0;

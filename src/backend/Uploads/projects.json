@@ -13,7 +13,9 @@
         "location":"LONDON, ON",
 
     "description": "An infill residential development within an existing shopping centre,comprising two apartment buildings of 32 and 30 storeys.",
-    "image": "http://localhost:8000/Uploads/Projects/well_towers.png"
+    "image": "http://localhost:8000/Uploads/Projects/well_towers.png",
+"scope": "\nMaster Planning\nSite Plan Approval\nStructural Engineering"
+
   },
   {
     "id": 3,
@@ -41,27 +43,28 @@
   },
     {
     "id": 6,
-    "title": "Springbank Drive",
-        "location":"LONDON, ON",
-    "budget": "$52M",
-    "description": "Two 15-storey residential apartment buildings constructed with cast-in-place concrete walls and Hambro floor systems. The development includes a three-storey podium and two levels of underground parking. Lateral loads from wind and seismic forces are resisted by cast-in-place concrete shear walls, with foundations consisting of raft, strip, and pad footings.",
-    "image": "http://localhost:8000/Uploads/Projects/aura blueprint.jpg"
-  },
-    {
-    "id": 7,
-    "title": "Highland Elite towers",
+        "title": "Highland Elite towers",
         "location":"LONDON, ON",
     "budget": "$300 Million",
     "description": "This residential development consists of two 17-storey towers over a four-level podium parking structure. The buildings are constructed using cast-in-place concrete, incorporating two-way slab and Hambro floor systems.",
-    "image": "http://localhost:8000/Uploads/Projects/aura blueprint.jpg"
+    "image": "http://localhost:8000/Uploads/Projects/white_oaks.png"
+    
   },
     {
-    "id": 8,
-    "title": "Springbank Drive",
+    "id": 7,
+"title": "Springbank Drive",
         "location":"LONDON, ON",
     "budget": "$52M",
     "description": "Two 15-storey residential apartment buildings constructed with cast-in-place concrete walls and Hambro floor systems. The development includes a three-storey podium and two levels of underground parking. Lateral loads from wind and seismic forces are resisted by cast-in-place concrete shear walls, with foundations consisting of raft, strip, and pad footings.",
-    "image": "http://localhost:8000/Uploads/Projects/aura blueprint.jpg"
+    "image": "http://localhost:8000/Uploads/Projects/springbank.png"
+  },
+    {
+    "id": 8,
+    "title": "Huron Church CRU Units",
+        "location":"Windsor, ON",
+    "status": "Completed",
+    "description": "A commercial retail development comprising multiple Commercial Retail Units (CRUs). The project included full architectural, structural, mechanical, and electrical (Arch/STR/MEP) design services. The total building area consists of approximately 23,000 ft² and 7,100 ft², providing flexible retail spaces designed to accommodate a range of commercial tenants.",
+    "image": "http://localhost:8000/Uploads/Projects/church_cru.png"
   },
     {
     "id": 9,
@@ -69,7 +72,7 @@
         "location":"london, ON",
     "status": "Completed",
     "description": "A three-storey office building with two infill Commercial Retail Units (CRUs). The project included full architectural, structural, mechanical, and electrical (Arch/STR/MEP) design services,delivering a coordinated mixed-use commercial development.",
-    "image": "http://localhost:8000/Uploads/Projects/aura blueprint.jpg"
+    "image": "http://localhost:8000/Uploads/Projects/hyland_office.png"
   }
 
 ]
