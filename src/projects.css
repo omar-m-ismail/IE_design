@@ -57,7 +57,7 @@ header{
   padding: 0;
   
 }
-.scope{}
+
 .collumn {
   display: flex;
   flex-direction: column;  /* keeps grouping intact */
