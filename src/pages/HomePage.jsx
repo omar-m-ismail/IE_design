@@ -115,7 +115,7 @@ residential spaces above.</p>
             ))}
           </div>
                               <Link to="/projects" className="toprojects">
-  <h2>SEE MORE PROJECTS →</h2>
+  <h2>discover MORE about our PROJECTS →</h2>
 </Link>
 
         </div>

@@ -84,11 +84,12 @@ header{
 }
 .structure{
     padding-right:3rem ;
-  position: absolute;right: 0;top: 84vh;
+  position: absolute;right: 0;top: 85vh;
     font-family: "Tan Mon Cheri", serif;
   font-size: 5.7rem;
   color: #f8f8f8;
 }
+
 
 /* =========================
    MAIN CONTENT
@@ -177,6 +178,13 @@ color: #20252D;
 
     overflow: visible;
 }
+.toprojects{
+    font-family: "Tan Mon Cheri", serif;
+    text-transform: uppercase;text-decoration: underline;
+    align-self: flex-end;
+    margin-right: 7vw;
+    color: #CECFD0;
+}
 .about_uss .title{
   font-size: 2.5rem;
   gap: 0;
@@ -241,6 +249,7 @@ padding: 2.5rem;
   margin-right:3vw;
   left: 50%;
   transform: translateX(-1%);
+  margin-bottom: 30vh;
 }
 
 .mini {
@@ -250,6 +259,7 @@ padding: 2.5rem;
   flex: 1;
     transform: translateX(5%);
     padding: 5vw;
+    margin-bottom: 0;
 }
 
 /* =========================
@@ -335,7 +345,7 @@ z-index: 0;
   background-position: center;
   background-repeat: no-repeat;
   color: #f8f8f8;
-
+ background-color: #20252D;
 
 }
 .galleryy::before {
@@ -364,7 +374,8 @@ z-index: 0;
 }
 .galleryy span img {
 
-  width: 500px;
+  max-width: 100px;
+  max-height: 50vh;
 }
 
 .galleryy hr {
@@ -427,14 +438,6 @@ align-items: center;
 
 }
 
-.toprojects{
-  font-family: "Tan Mon Cheri";
-  text-transform: uppercase;
-  text-decoration: underline;
-  color: #CECFD0;
-  margin-left: 65vw;
-}
-
 /* =========================
    TEXT ALIGNMENT
 ========================= */
@@ -449,7 +452,7 @@ align-items: center;
 ========================= */
 .home-footer {
   position: absolute;
-  top:710vw;
+  top:415vw;
   margin: 0;
   overflow: hidden;
 margin-bottom: 0;

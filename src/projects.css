@@ -223,7 +223,7 @@ border-radius: 0 !important;}
   display: block;
   object-fit: contain;
 }
-footer {
+.projects-footer {
   position: absolute;
   top:400vw;
   margin: 0;
