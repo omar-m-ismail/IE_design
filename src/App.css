@@ -1,255 +1,157 @@
 /* =========================
    GLOBAL RESET
 ========================= */
-
-html, body, #root, .home {
-  width: 100vw !important;
-  min-width: 100vw !important;
-  max-width: 100vw !important;
+html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
   overflow-x: hidden;
-}
-
-
-
-.home-content,
-.projects_slide,
-.about_uss {
-  width: 100vw !important;
-  max-width: 100vw !important;
-}
-
-*
-
-.blueprint {
-  display: flex;
-  justify-content: center;
-}
-
-.blueprint img {
-  width: 85vw;
-  max-width: 1200px;
-}
-
-
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-*,
-*::before,
-*::after {
   box-sizing: border-box;
+  background: #20252D;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  max-width: 100vw;
-  background: #20252D;
+*, *::before, *::after {
+  box-sizing: inherit;
+  gap: 0;
 }
 
 /* =========================
    ROOT / PAGE WRAPPER
 ========================= */
 #root {
-  min-width: 100vw;
-  margin: 0 ;
+  width: 100%;
+    background: #20252D;
 }
-.home{
-    min-width: 100% !important;
-  overflow-x: hidden;
-  margin-left: calc(-50vw+49vw);
-  margin-right: calc(-50vw+49vw);
-  border-style:solid ;
-  border-width: 2px;
-  border-color: #e5e5e5;
-}
-header{
-  min-width: 100vw;
-  background-color: #20252D;
 
+.home {
+  width: 100%;
+  overflow-x: hidden;
+    background: #20252D;
+    margin-top: 0;
 }
-.creative{
-  padding-left:3rem ;
-  position: absolute;left: 0;top: 72vh;
-    font-family: "Tan Mon Cheri", serif;
-  font-size: 5.7rem;
+
+/* =========================
+   HEADER
+========================= */
+header {
+  width: 100%;
+  background: #20252D;
+}
+
+.creative,
+.structure {
+  margin: 0 !important;
+  padding: 0;
+  font-family: "Tan Mon Cheri", serif;
+  font-size: 4.9rem;
   color: #f8f8f8;
-  overflow: visible;
+ z-index: 1;
+ padding-left: 4rem;
 }
 .structure{
-    padding-right:3rem ;
-  position: absolute;right: 0;top: 85vh;
-    font-family: "Tan Mon Cheri", serif;
-  font-size: 5.7rem;
-  color: #f8f8f8;
+    background: #20252D;
+    align-self: end;
+    padding-left: 23rem;
 }
-
 
 /* =========================
    MAIN CONTENT
 ========================= */
 .home-content {
-  background-color:#20252D ;
-  position: absolute;
+  width: 100%;
+  background: #20252D;
 
-  overflow: hidden;
-
-  max-width: none;
-  margin-top: 25vw;
   display: flex;
   flex-direction: column;
-    transform: translateX(-2%);
-
 
 }
-.vid{
-  padding: 2rem;
-  padding-left: 5rem;
+hr{
+  width: 92vw;
+  color: #d8d8d8;
+  opacity: 0.8;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-video{
- padding-left: 1rem;
-  max-width: 85vw ;
+h1{
+  line-height: 0.85 !important;
+}
+.vid {
+  padding: 2rem 5rem;
 }
 
+video {
+  width: 100%;
+  max-width: 85vw;
+}
+
+/* =========================
+   BUTTON LINKS
+========================= */
 .gotoprojects,
 .gototeam {
   text-decoration: underline;
-
+    color: #d8d8d8;
+}
+.toprojects{
+  font-family: 'Tan Mon Cheri';
+  text-transform: uppercase;
+  color: #d8d8d8;
+  padding-left: 27vw;
 }
 
 /* =========================
-   BUTTONS
-========================= */
-/*.gotoprojects,
-.gototeam {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: calc(0.6rem + 0.4vw) calc(1.2rem + 0.8vw);
-  background: #b2b4b6;
-  border-radius: 15% / 50%;
-  font-size: calc(1.1rem + 0.5vw);
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-}*/
-
-/* =========================
-   GALLERIES
+   PROJECTS SECTION
 ========================= */
 .projects_slide {
-  background-color: #d8d8d8;
+  width: 100%;
+  height: 45vw;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
-  padding: 5rem;
-  width: 100vw;
-  height: 45vw;
-font-family: "Red Hat Display Heavy";
-color: aliceblue;
+  background: url("/aura.jpg") center/cover no-repeat;
+  color: #fff;
+  position: relative;
+}
 
-
-  background-image: url("/aura.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transform: translateX(-0.1%);
-}
-.about_uss{
-    background-color: #d8d8d8;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
- padding: 1rem;
- padding-left: 5rem;
- padding-top: 5rem;
-  width: 100vw !important;
-  height: 50vw;
-
-color: #20252D;
-
-    overflow: visible;
-}
-.toprojects{
-    font-family: "Tan Mon Cheri", serif;
-    text-transform: uppercase;text-decoration: underline;
-    align-self: flex-end;
-    margin-right: 7vw;
-    color: #CECFD0;
-}
-.about_uss .title{
-  font-size: 2.5rem;
-  gap: 0;
-
-    font-family: "Tan Mon Cheri", serif;
-    text-transform: capitalize;
-    padding-left: 3rem;
-}
-.about_uss .title h2{
-  padding: 0;
-  margin: 0;
-  padding-left: px;
-      overflow: visible;
-}
-.about_uss .yap{
-      background-color: #20252D;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 5vw;
-
-  color: #f8f8f8;
-  min-width: 95%;
-  text-align: justify;
-  overflow: visible;
-padding: 2.5rem;
-}
-.yap p{
-    text-align-last: left;
-    max-width: 35vw;
-      font-family: "Red Hat Display";
-}
 .projects_slide::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* adjust opacity */
-  z-index: -1; /* behind content */
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
 }
 
 .projects_content {
-  display: flex;
-  flex-direction: column;/* or center */
-  gap: 3vh;
-  text-align: right;
+  position: relative;
+  z-index: 1;
   max-width: 43vw;
   padding: 2rem;
-  margin-left: 40vw; /* use margin, not padding, to shift layout */
+  margin-left: 40vw;
+  text-align: right;
 }
-.projects_content p{
-  font-family: "Red Hat Display" !important;
-  text-align: right !important;
+
+.projects_content p {
+  font-family: "Red Hat Display";
 }
+
+/* =========================
+   PROJECT CARDS
+========================= */
 .gallery {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: calc(2rem + 1vw);
   width: 100%;
-
-  margin-right:3vw;
-  left: 50%;
-  transform: translateX(-1%);
-  margin-bottom: 30vh;
+  justify-content: space-between;
+  align-items: center;
+    background: #20252D;
+    padding-left: 3vw;
+}
+.galleryy>span{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mini {
@@ -257,293 +159,275 @@ padding: 2.5rem;
   flex-wrap: wrap;
   gap: calc(1.2rem + 1vw);
   flex: 1;
-    transform: translateX(5%);
-    padding: 5vw;
-    margin-bottom: 0;
+  padding: 5vw;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
-/* =========================
-   FIGURES / CARDS
-========================= */
+.mini.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .mini figure {
-    padding: 100px !important;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideCard 0.7s ease forwards;
+}
+
+@keyframes slideCard {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.mini figure {
   flex: 1 1 calc(33% - 3rem);
-  max-width: 26vw !important;
+  max-width: 26vw;
   min-height: 18vw;
-  display: flex;
-  gap: 0 !important;
-  flex-direction: column;
-  align-items: flex-start !important;
-  justify-content: flex-start !important;
-  margin: 0 ;
-  padding: 0 !important;
-  border-radius: 0 !important;
-  overflow: hidden !important;
-  text-align: left;
+  margin: 0;
+  background: #222;
   color: #f8f8f8;
-  background-color: #222 !important;
-  border-width: 2px !important;
-  border-color: #f8f8f8 !important;
-  border-style: solid;
+  border: 2px solid #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Red Hat Display';
+  padding: 0;
+  overflow: hidden;
+
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  color: #fff;
+  text-align: start;
+  z-index: 2;
+  pointer-events: none; /* makes the video clickable */
+}
+
+.video-overlay h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Red Hat Display Heavy", serif;
+}
+
+.video-overlay p {
+  margin: 0.5rem 0 0;
+  font-family: "Red Hat Display";
+}
+
+.mini figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  height: 15rem;
+}
+
+.mini figure div {
+  padding: 20px;
+}
+
+.mini figure div h2 {
+  text-transform: uppercase;
   font-family: "Tan Mon Cheri";
 }
-.mini figure img{
-  border-radius: 0 !important;
-}
-.mini figure div{
-      padding: 20px !important;
-}
-.mini figure div h4{
-font-family: "Red Hat Display";
-}
-.mini figure div h2{
 
-  font-size: larger;
-  text-transform: uppercase;
-}
-.mini figure div h6{
-font-family: "Red Hat Display";
-text-align: right;
-min-width: 100%;
-text-decoration: underline;
-padding-bottom: 30px;
-}
+.mini figure div h6 {
+  text-align: right;
+  text-decoration: underline;
+  padding-bottom: 30px;
 
-/* =========================
-   IMAGES
-========================= */
-.gallery img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: calc(0.6rem + 0.3vw);
-}
-
-figure.team_fig img.team_pic {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
 }
 
 /* =========================
    ABOUT SECTION
 ========================= */
-.galleryy {
-  position: absolute;left: 0;top: 0;
-z-index: 0;
-  min-height: 85vh;
-    padding: 0;
-  margin: 0;
-
-  isolation: isolate;
-  min-width: 100vw !important;
+.about_uss {
+  width: 100%;
+  height: 50vw;
+  padding: 3.5rem 3.5rem 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-start;
+  color: #20252D;
+  background: #d8d8d8;
+}
+
+.about_uss .title {
+  font-family: "Tan Mon Cheri";
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  padding-left: 3rem;
+}
+.about_uss .title h2{
+  margin: 0;
+}
+
+.about_uss .yap {
+  width: 100%;
+  display: flex;
+  gap: 2vw;
   justify-content: space-between;
-  background-image: url("/page_top.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 2rem;
+  background: #20252D;
   color: #f8f8f8;
- background-color: #20252D;
-
-}
-.galleryy::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* adjust opacity */
-  z-index: -1; /* behind content */
 }
 
+.about_uss .yap span {
+  gap: 0;
+  max-width: 45%;
+  font-family: "Red Hat Display";
+  text-align: justify;
+  margin: 0;
+}
+
+.about_uss .yap>span>p{
+  margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about_uss .yap>p {
+ max-width: 45%;
+  font-family: "Red Hat Display";
+  text-align: justify;
+  margin: 0;
+}
+
+/* =========================
+   BACKGROUND HERO
+========================= */
+.galleryy {
+  width: 100%;
+  min-height: 85vh;
+  padding: 0;
+  margin: 0;
+  background: url("/page_top.png") center/cover no-repeat;
+  position: relative;
+  color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .two_things{
-  width: 85%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  width:90vw ;
+  padding: 0;
+  margin: 0;
+}
+.galleryy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
 }
 
 .galleryy span {
-  position: absolute; top: 0px;
+
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  font-family: "Red Hat Display";
-}
-.galleryy span img {
-
-  max-width: 100px;
-  max-height: 50vh;
-}
-
-.galleryy hr {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  width: 90%;
-  opacity: 0.5;
+  gap: 1rem;
+  z-index: 1;
+  gap: 0;
 }
 
 .galleryy img {
   width: 100%;
-  max-width: 200px;
+  width: 132px;
+  padding: 1rem;
 }
-.blueprint{
-  background-color: #e5e5e5;
+
+
+/* =========================
+   BLUEPRINT
+========================= */
+.blueprint {
+  width: 100%;
+  background: #e5e5e5;
   padding: 4rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
 }
-.blueprint img{
-  max-width: 92vw;
-}
-.two_pics{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 
+.blueprint img {
+  width: 85vw;
+  max-width: 1200px;
 }
-.two_pics .pic{
+
+/* =========================
+   TWO PICS SECTION
+========================= */
+.two_pics {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.two_pics .pic {
   max-width: 40vw;
- display: flex;
- flex-direction: column;
- align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.two_pics .pic img{
+
+.two_pics .pic img {
+  width: 100%;
   max-width: 40vw;
   max-height: 30vw;
 }
-/* =========================
-   CONTACT SECTION
-========================= */
-.galleryyy {
-  display: flex;
-  flex-direction: column;
-justify-content: center ;
-align-items: center;
-  min-height: 100vh;
-  min-width: 100vw;
-  color: #f8f8f8;
-  background-image: url("office.png");
-    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-    width: 100vw;
-  width: 100vw;
-
-  left: 50%;
- transform: translate(1%);
-  overflow: visible;
-
-}
 
 /* =========================
-   TEXT ALIGNMENT
-========================= */
-.gallery h2,
-.gallery h3,
-.gallery p {
-  text-align: left;
-}
-
-/* =========================
-   FOOTER
-========================= */
-.home-footer {
-  position: absolute;
-  top:415vw;
-  margin: 0;
-  overflow: hidden;
-margin-bottom: 0;
-  padding: calc(2rem + 1vw) 0;
-  text-align: center;
-  justify-content: right;
-  font-family: 'Red Hat Display';
-min-width: 100vw;
-transform: translateX(-2.5%);
-}
-.galleryyy img{
-  margin-top: 350px;
-  width: 100%;
-  max-width: 100px;
-  max-height: 50vh;
-
-}
-
-.galleryyy hr{
-    border: 1px solid #f8f8f8;
-  width: 80%;
-  
-
-
-}
-.galleryyy .roooow{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.social_links{
-
-padding-top: 0;
-margin-top: 0;
-overflow: visible;
-}
-.linkedin,
-.insta{
-padding-top: 0!important;
-margin-top:0 !important;
-overflow: visible;
-}
-.linkedin img {
-  padding-top: 0!important;
-margin-top:0 !important;
-  width: 20px;
-  height: 20px;
-}
-.insta img {
-  padding-top: 0!important;
-margin-top:0 !important;
-  width: 20px;
-  height: 20px;
-}
-a{
-  margin: 1rem;
-}
-
-.galleryyy div{
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.galleryyy::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* adjust opacity */
-  z-index: -1; /* behind content */
-}
-/* =========================
-   MOBILE
+   RESPONSIVE MOBILE
 ========================= */
 @media (max-width: 768px) {
 
-  .home {
-    padding: calc(1rem + 2vw);
+  .creative,
+  .structure {
+    font-size: 3rem;
+    padding: 1.5rem;
   }
 
   .home-content {
-    gap: calc(2.5rem + 1vw);
+    padding-top: 15vw;
   }
 
-  .gallery {
-    flex-direction: column;
-    align-items: flex-start;
+  .projects_slide {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .projects_content {
+    margin-left: 0;
+    text-align: left;
+    max-width: 100%;
   }
 
   .mini figure {
@@ -552,28 +436,38 @@ a{
     min-height: calc(30vw + 2rem);
   }
 
-  .galleryy img {
+  .about_uss {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .about_uss .yap p {
+    max-width: 100%;
+  }
+
+  .two_pics {
+    flex-direction: column;
+  }
+
+  .two_pics .pic {
     max-width: 100%;
   }
 }
 
-
+/* =========================
+   FONTS
+========================= */
 @font-face {
   font-family: "Tan Mon Cheri";
   src: url("/src/assets/fonts/tan-mon-cheri.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
+
 @font-face {
   font-family: "Red Hat Display";
   src: url("/src/assets/fonts/RedHatDisplayRegular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
+
 @font-face {
   font-family: "Red Hat Display Heavy";
   src: url("/src/assets/fonts/RedHatDisplayBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
-
