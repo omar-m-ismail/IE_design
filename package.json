@@ -5,14 +5,14 @@
   "homepage": "https://omar-m-ismail.github.io/IE_design",
 
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-      "predeploy": "npm run build",
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
-  },
+},
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.2.0",
