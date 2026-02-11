@@ -87,14 +87,12 @@ header {
 .card-left img,
 .card-right img,
 .card-right1 img {
-  width: 40vw;
-  height: 40vw;
-  max-width: 44vw;
-  max-height: 44vw;
+  width: 44vw;
+  height: 44vw;
   object-fit: cover;
   flex-shrink: 0;
   border-radius: 0;
-  min-width: 4vw;
+
 }
 
 /* -------------------- TEXT -------------------- */
