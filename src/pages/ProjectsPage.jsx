@@ -20,30 +20,33 @@ export default function Projects() {
           {/* FIRST COLUMN (2 PROJECTS) */}
           <div className="collum">
             <div className="card-left">
-              <img src="forest.jpg" alt="oxford towers" />
+                            <img src="/Projects/white_oaks.png" alt="Wellington Apartments" />
+
               <span>
-                <h2>Forest Edge</h2>
-                <h4>london, on</h4>
+
+                                <h2>South London Towers</h2>
+                <h4>LONDON, ON</h4>
+                
 
               </span>
             </div>
                         <div className="middle-image">
-              <img src="forest_wide.png" alt="middle" />
+              <img src="highelite_wide.png" alt="middle" />
             </div>
 
+
             <div className="card-right">
-              <img src="/Projects/white_oaks.png" alt="Wellington Apartments" />
+              <img src="forest.jpg" alt="forest edge" />
               <span>
-                <h2>South London Towers</h2>
-                <h4>LONDON, ON</h4>
-                
+                <h2>Forest Edge</h2>
+                <h4>london, on</h4>
 
 
               </span>
             </div>
 
-            <div className="middle-image">
-              <img src="highelite_wide.png" alt="middle" />
+                        <div className="middle-image">
+              <img src="forest_wide.png" alt="middle" />
             </div>
 
           </div>

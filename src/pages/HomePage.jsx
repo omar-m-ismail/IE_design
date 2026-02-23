@@ -52,7 +52,7 @@ export default function Home() {
 
 <Link
   to="/projects" className="gotoprojects" onClick={() => window.scrollTo(0, 0)}>
-  SEE MORE PROJECTS →
+  SEE SAMPLE PROJECTS →
 </Link>
 
             </div>

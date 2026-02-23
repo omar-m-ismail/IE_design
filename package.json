@@ -2,17 +2,16 @@
   "name": "ie-design",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://omar-m-ismail.github.io/IE_design",
-
+  "homepage": "https://omar-m-ismail.github.io/creative_design",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.2.0",
@@ -38,5 +37,4 @@
     "tailwindcss": "^4.1.18",
     "vite": "^7.2.4"
   }
-  
 }
