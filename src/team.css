@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* -------------------- PAGE -------------------- */
+.team_page {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff!important;
+  font-family: "Red Hat Display";
+}
+.g1text ul,.g2text ul{
+  list-style: circle;
+  margin-left: 15px;
+}
+.row h1{
+  padding-top: 1rem;
+  text-align: end;
+}
+
+/* -------------------- HEADER -------------------- */
+.header {
+  background-color: #fff;
+  color: #20252D;
+}
+.tohome2 {
+  color: #20252D;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin: 0;
+  margin-left: 30rem;
+  display: inline-block;
+  margin-bottom: 30rem;
+}
+.team_yap{
+
+      align-items: flex-end;
+        margin-left: 5rem;
+            font-size: 1.2rem;
+                display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    gap: 3rem;
+}
+.holding{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.g1text,.g2text{
+          display: flex;
+    flex-direction: column;
+
+        font-size: medium;
+        font-weight: bold;
+            font-family: "Red Hat Display Heavy";
+}
+.group1,.group2{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    gap: 2rem;
+    
+}
+.dark{
+    background-color: #20252D;
+    color: #fff;
+        display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    font-size: 1.3rem;
+    gap: 3rem;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.dark img{
+  max-width: 10vw;
+}
+.team_yap img{
+    max-width: 35vw;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.row h1{
+  text-transform: uppercase;
+}
+.group1 img,.group2 img{
+  max-width:17vw;
+  height: 100%;
+
+}
+.group1 h2,.group2 h2{
+  text-transform: uppercase;
+}
