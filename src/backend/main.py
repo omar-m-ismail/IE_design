@@ -1,19 +1,173 @@
-from fastapi import FastAPI
+from gc import disable
+from nt import access
+from sqlite3 import dbapi2
+from uu import encode
+from webbrowser import get
+from starlette.status import HTTP_401_UNAUTHORIZED
+from typing_extensions import deprecated
+from fastapi import FastAPI, Form, File, UploadFile, Query, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi import Form, File, UploadFile
-import os
-from pathlib import Path
-from datetime import datetime
+from fastapi.staticfiles import StaticFiles
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from pydantic import BaseModel
-from typing import List
+from pathlib import Path
+from datetime import datetime, timedelta
+from typing import Optional, List
 import os
 import shutil
 import json
-from fastapi.staticfiles import StaticFiles
+from jose import JWTError, jwt
+from passlib.context import CryptContext
 
 
 
+
+SECRET_KEY = '5e318be18fc9293fd2911e7bc80a5128dff6ccf13973972ae36bfb1e4c6bbb9a'
+ALGORITHM = 'HS256'
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+db = {
+    'omar':{
+        'username':'omar',
+        'full_name': 'omar_ismail',
+        'email':'omar@gmail.com',
+        'hashed_pass':'',
+        'disabled' : False
+    }
+}
+# ---------------------------
+# DATA MODELS
+# ---------------------------
+class placeholder(BaseModel):
+    id: int
+    name: str
+    role: str
+    image: str
+class Contact(BaseModel):
+    address: str
+    phone: str
+    email: str
+
+
+class Project(BaseModel):
+    id: int
+    name: str
+    description: str
+    image: str
+    location: str
+
+class TeamMember(BaseModel):
+    id: int
+    name: str
+    role: str
+    image: str
+
+
+class Scheduleday(BaseModel):
+    day: str
+    open: str
+    close: str
+class HomeData(BaseModel):
+    about: List[str]
+    projects: List[Project]
+    team: List[TeamMember]
+    contact: Contact
+    schedule: List[Scheduleday] 
+class Token(BaseModel):
+    access_token: str
+    token_type : str
+
+class TokenData(BaseModel):
+    username: str or None = None
+
+class User(BaseModel):
+    username: str
+    email: str or None = None
+    full_name: str or None = None
+    disabled: bool or None = None
+
+class UserInDB(User):
+    hashed_password: str
+
+pwd_context= CryptContext(schemes=['bcrypt'],deprecated='auto')
+oauth_2_scheme = OAuth2PasswordBearer(tokenUrl='token')
 app = FastAPI()
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+def hash_password(password):
+    return pwd_context.hash(password)
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+    return None
+
+def authenticate_user(db, username: str, password: str):
+    user=get_user(db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    
+    return user
+
+def create_access_token(data: dict, expires_delta: timedelta or None = None):
+    to_encode=data.copy()
+    if expires_delta:
+        expires= datetime.utcnow() + expires_delta
+    else:
+        expires= datetime.utcnow() + timedelta(minutes=30)
+    to_encode.update({'exp': expires})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+async def get_current_user(token: str = Depends(oauth_2_scheme)):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+
+    user = get_user(db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+
+    return user
+
+async def is_current_user_active(current_user: UserInDB=Depends (get_current_user)):
+    if current_user.disabled:
+        raise HTTPException
+    
+    return current_user
+
+@app.post('/token', response_model=Token)
+async def login_for_access_token(form_data:OAuth2PasswordRequestForm=Depends()):
+    user = authenticate_user(db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(status_code=HTTP_401_UNAUTHORIZED, detail='wrong username or password',  headers={"WWW-Authenticate": 'Bearer'})
+    access_token_expires=timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token=create_access_token(data={"sub":user.username},expires_delta=access_token_expires)
+    return{"access_token":access_token, "token_type":"bearer"}
+
+@app.get("/users/me/", response_model=User)
+async def users_me(current_user: User=Depends(is_current_user_active)):
+    return current_user
+
+@app.get("/users/me/items",)
+async def users_me(current_user: User=Depends(is_current_user_active)):
+    return [{"item_id":1,"owner":current_user}]
+
+
+
 BASE_DIR = Path(__file__).resolve().parent  # -> src/backend
 app.mount(
     "/Uploads",
@@ -59,44 +213,9 @@ app.add_middleware(
 )
 
 
-# ---------------------------
-# DATA MODELS
-# ---------------------------
-class placeholder(BaseModel):
-    id: int
-    name: str
-    role: str
-    image: str
-class Contact(BaseModel):
-    address: str
-    phone: str
-    email: str
 
 
-class Project(BaseModel):
-    id: int
-    name: str
-    description: str
-    image: str
-    location: str
 
-class TeamMember(BaseModel):
-    id: int
-    name: str
-    role: str
-    image: str
-
-
-class Scheduleday(BaseModel):
-    day: str
-    open: str
-    close: str
-class HomeData(BaseModel):
-    about: List[str]
-    projects: List[Project]
-    team: List[TeamMember]
-    contact: Contact
-    schedule: List[Scheduleday] 
 
 
 # ---------------------------
@@ -142,10 +261,6 @@ def get_home_data():
             {"id": 1, "name": "kenneth ngacaku", "role": "architectural lead", "image": "arch_lead.png"},
             {"id": 2, "name": "Daniel Heo", "role": "Arch Designer / BIM Coordinator", "image": "BIM_coord.jpg"},
         ],
-        "contact": {
-            "address": "placeholder address",
-            "email": "example@gmail.com"
-        },
         "schedule": [
             {"day": "Monday", "open": "8am", "close": "5pm"},
             {"day": "Tuesday", "open": "8am", "close": "5pm"},
@@ -223,11 +338,11 @@ def get_what_we_do():
         }
     ]
 @app.post("/upload-team/")
-async def upload_project(
+async def upload_team_member(
     name: str = Form(...),
     sallery: str =Form(...),
     position: str = Form(...),
-
+    email: str =Form(...),
     file: UploadFile = File(...)
 ):
     # save image
@@ -244,6 +359,7 @@ async def upload_project(
         "name": name,
         "budget": sallery,
         "position": position,
+        "email": email,
         "image": f"http://localhost:8000/Uploads/members/{file.filename}"
     }
 
@@ -264,7 +380,7 @@ async def upload_project(
     budget: str =Form(...),
     description: str = Form(...),
     status:str =Form(...),
-        scope:str =Form(...),
+    scope:str =Form(...),
     file: UploadFile = File(...)
 ):
     # save image
@@ -299,4 +415,25 @@ async def upload_project(
 @app.get("/api/projects")
 def get_projects():
     return json.loads(PROJECTS_DATA_FILE.read_text())
+
+@app.get("/search-members/")
+async def search_members(q: Optional[str] = Query(None)):
+    members = json.loads(MEMBERS_DATA_FILE.read_text())
+
+    if not q:
+        return {"count": len(members), "results": members}
+
+    q = q.lower()
+
+    results = [
+        member for member in members
+        if q in member["name"].lower()
+        or q in member["position"].lower()
+        or q in member["email"].lower()
+    ]
+
+    return {
+        "count": len(results),
+        "results": results
+    }
 

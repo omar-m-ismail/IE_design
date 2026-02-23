@@ -26,7 +26,7 @@ header {
 .tohome {
   color: #20252D;
   text-decoration: underline;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0;
   margin-left: 7rem;
   display: inline-block;
@@ -47,7 +47,7 @@ header {
   flex-direction: column;
   gap: 24px;
   width: 100%;
-  padding: 1.4rem 0;
+
 }
 
 .collum {
@@ -68,10 +68,13 @@ header {
   align-items: flex-end;
   justify-content: space-between;
   gap: 20px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .card-left {
   flex-direction: row-reverse;
+  justify-content: flex-end;
   padding-left: 5rem;
   padding-right: 2rem;
 }
@@ -87,8 +90,8 @@ header {
 .card-left img,
 .card-right img,
 .card-right1 img {
-  width: 44vw;
-  height: 44vw;
+  width: 46.7vw;
+  height: 46.7vw;
   object-fit: cover;
   flex-shrink: 0;
   border-radius: 0;
@@ -102,6 +105,9 @@ header {
   flex-direction: column;
   flex: 1;
   gap: 8px;
+}
+.card-left span{
+    align-items: flex-end;
 }
 
 .collum h2,
@@ -118,9 +124,9 @@ header {
 .card-left h2,
 .card-right h2,
 .card-right1 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
-  font-family: "Red Hat Display Heavy";
+  font-family: "Red Hat Display";
     margin: 0;
 }
 
@@ -144,9 +150,11 @@ header {
 .card-right p {
   margin-right: 5rem;
     margin: 0;
+    text-align: justify;
 }
 .card-left p{
     margin: 0;
+    text-align: justify;
 }
 
 /* -------------------- LINKS -------------------- */
@@ -170,9 +178,9 @@ a {
 
 /* -------------------- MIDDLE IMAGES -------------------- */
 .middle-image {
-  margin: 3vh 0;
+
   min-width: 100vw !important;
-  height: 66vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

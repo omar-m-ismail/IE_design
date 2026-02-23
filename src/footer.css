@@ -13,11 +13,12 @@
 /* -------------------- GALLERYYY -------------------- */
 .galleryyy {
     padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
   background-image: url("/office.png");
   background-size: cover;
   background-position: center;
@@ -73,10 +74,17 @@ ol {
 .social{
     margin: 0 !important;
     width: 33%;
+        gap: 1rem;
 }
 .hours{
 margin: 0 !important;
     width: 33%;
+    gap: 1rem;
+}
+.location{
+margin: 0 !important;
+    width: 33%;
+    gap: 1rem;
 }
 
 .social h2{

@@ -8,38 +8,32 @@ export default function Home() {
   const [data, setData] = useState(null);
   const miniRef = useRef(null);
 
-  useEffect(() => {
-    fetch("http://localhost:8000/api/home")
-      .then((res) => res.json())
-      .then((json) => setData(json))
-      .catch((err) => console.error(err));
-  }, []);
+
 
   // ✅ run AFTER data is loaded
-  useEffect(() => {
-    if (!data) return;
+ useEffect(() => {
+  const miniElement = miniRef.current;
+  if (!miniElement) return;
 
-    const miniElement = miniRef.current;
-    if (!miniElement) return;
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          miniElement.classList.add("visible");
+          observer.unobserve(miniElement);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            miniElement.classList.add("visible");
-            observer.unobserve(miniElement);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
+  observer.observe(miniElement);
 
-    observer.observe(miniElement);
+  return () => observer.disconnect();
+}, []); // ✅ empty dependency array
 
-    return () => observer.disconnect();
-  }, [data]); // 🔥 important
 
-  if (!data) return <div>Loading...</div>;
+
 
   return (
     <div className="home">
@@ -56,9 +50,11 @@ export default function Home() {
                 </p>
               </div>
 
-              <Link to="/projects" className="gotoprojects">
-                SEE MORE PROJECTS →
-              </Link>
+<Link
+  to="/projects" className="gotoprojects" onClick={() => window.scrollTo(0, 0)}>
+  SEE MORE PROJECTS →
+</Link>
+
             </div>
           </span>
           <h1 className="creative">CREATIVE</h1>
@@ -150,22 +146,88 @@ export default function Home() {
         </div>
 
         <div className="gallery">
-          <div className="mini" ref={miniRef}>
-            {data.projects.slice(0, 6).map((project) => (
-              <figure key={project.id}>
-                <img src={project.image} alt={project.name} />
-                <div>
-                  <h2>{project.name}</h2>
-                  <h6>{project.location}</h6>
-                  <h4>{project.description}</h4>
-                </div>
-              </figure>
-            ))}
-          </div>
 
-          <Link to="/projects" className="toprojects">
+  <div className="mini" ref={miniRef}>
+
+    <figure>
+      <img src="highland_elite.png" alt="Highland Elite Towers" />
+      <div>
+        <h2>Highland Elite Towers</h2>
+        <h6>London, ON</h6>
+
+      </div>
+    </figure>
+
+    <figure>
+      <img src="sou_res.png" alt="South Residential Towers" />
+      <div>
+        <h2>South Residential Towers</h2>
+        <h6>London, ON</h6>
+
+      </div>
+    </figure>
+
+    <figure>
+      <img src="ox_cap.png" alt="Oxford Capulet Towers" />
+      <div>
+        <h2>Oxford Capulet Towers</h2>
+        <h6>London, ON</h6>
+      </div>
+    </figure>
+
+    <figure>
+      <img src="meadowilly.png" alt="Meadowlily Subdivision" />
+      <div>
+        <h2>Meadowlily Subdivision</h2>
+        <h6>London, ON</h6>
+      </div>
+    </figure>
+
+    <figure>
+      <img src="coburg.png" alt="Cobourg CRU UNITS" />
+      <div>
+        <h2>Cobourg CRU UNITS</h2>
+        <h6>Cobourg, ON</h6>
+
+      </div>
+    </figure>
+
+    <figure>
+      <img src="huron.png" alt="Huron Church" />
+      <div>
+        <h2>Huron Church</h2>
+        <h6>Windsor, ON</h6>
+      </div>
+    </figure>
+
+  </div>
+
+
+
+          <Link to="/LoginPage" className="toprojects"  onClick={() => window.scrollTo(0, 0)}>
             <h2>discover MORE about our PROJECTS →</h2>
           </Link>
+        </div>
+        <div className="work_with_us">
+          <h1 className="wwu">
+work <br/>
+with us
+          </h1>
+          <div className="wwu_text">
+          <h5>
+we Design the future
+          </h5>
+          <p>
+          At Creative Structures, we help ideas take
+shape through thoughtful design and purposeful
+execution. Start building your story with us.
+          </p>
+          <Link to="/EngineeringTeam"   onClick={() => window.scrollTo(0, 0)}>
+          <span className="lm_button">
+          learn more
+          </span>
+          </Link>
+          </div>
         </div>
       </main>
     </div>
