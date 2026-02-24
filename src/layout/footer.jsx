@@ -13,14 +13,14 @@ export default function Footing() {
       <div className="location">
         <h2>location</h2>
         <ul>
-        <il><FontAwesomeIcon icon={faLocationPin} />
-2C-1701 Richmond Street, London, Ontario. <br /></il>
-        <il><FontAwesomeIcon icon={faLocationPin} />
-675 Cochrane Drive East Tower 6th Floor,<br /></il>
-        <il>Markham ON <br /></il>
-        <il>Tel: +1 (519) 878-5488 <br />
-        </il>
-        <il>cs@creativestr.ca</il>
+        <li><FontAwesomeIcon icon={faLocationPin} />
+2C-1701 Richmond Street, London, Ontario. <br /></li>
+        <li><FontAwesomeIcon icon={faLocationPin} />
+675 Cochrane Drive East Tower 6th Floor,<br /></li>
+        <li>Markham ON <br /></li>
+        <li>Tel: +1 (519) 878-5488 <br />
+        </li>
+        <li>cs@creativestr.ca</li>
         </ul>
       </div>
 

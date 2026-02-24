@@ -42,7 +42,7 @@ body {
 .team_yap{
 
       align-items: flex-end;
-        margin-left: 5rem;
+        margin-left: 6rem;
             font-size: 1.2rem;
                 display: flex;
     flex-direction: row;
@@ -54,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: 90% !important;
 }
 .g1text,.g2text{
           display: flex;
@@ -64,12 +64,16 @@ body {
         font-weight: bold;
             font-family: "Red Hat Display Heavy";
 }
+.g1text{
+  margin-bottom: 2rem;
+}
 .group1,.group2{
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
     font-size: 1.2rem;
     gap: 2rem;
+        padding-left: 1rem;
     
 }
 .dark{
@@ -77,20 +81,21 @@ body {
     color: #fff;
         display: flex;
     flex-direction: column;
-    padding-top: 5rem;
+    padding-top: 2rem;
     font-size: 1.3rem;
-    gap: 3rem;
+    gap: 1rem;
     width: 100%;
     padding-left: 5rem;
-    padding-right: 5rem;
+    padding-right: 6rem;
 }
 .dark img{
   max-width: 10vw;
 }
 .team_yap img{
-    max-width: 35vw;
+    max-width: 40vw;
 }
 .row{
+  padding-left: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,5 +109,6 @@ body {
 
 }
 .group1 h2,.group2 h2{
+    padding-left: 1rem;
   text-transform: uppercase;
 }

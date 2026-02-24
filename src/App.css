@@ -43,7 +43,7 @@ header {
   margin: 0 !important;
   padding: 0;
   font-family: "Tan Mon Cheri", serif;
-  font-size: 4.9rem;
+  font-size: 6.5rem;
   color: #f8f8f8;
  z-index: 1;
  padding-left: 4rem;
@@ -51,7 +51,7 @@ header {
 .structure{
     background: #20252D;
     align-self: end;
-    padding-left: 23rem;
+    padding-left: 29rem;
 }
 
 /* =========================
@@ -91,12 +91,16 @@ video {
 .gototeam {
   text-decoration: underline;
     color: #d8d8d8;
+    margin-top: 0;
+    font-family: "Red Hat Display";
 }
 .toprojects{
   font-family: 'Tan Mon Cheri';
   text-transform: uppercase;
   color: #d8d8d8;
   padding-left: 27vw;
+  text-decoration: underline;
+  font-size: 1.4rem;
 }
 
 /* =========================
@@ -105,7 +109,7 @@ video {
 .projects_slide {
   width: 100%;
   height: 45vw;
-  padding: 5rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -121,12 +125,14 @@ video {
   font-family: "Red Hat Display Heavy";
   align-items: center;
   justify-content: space-evenly;
-  padding: 5rem;
+  padding: 7rem;
     text-align: center;
 }
-.work_with_us h1{
-  font-size: 5rem;
+ .wwu{
+  text-transform: uppercase;
+    font-size: 6rem;
   color: #7391B7;
+  margin: 0.5rem;
  }
 .wwu_text{
   display: flex;
@@ -140,19 +146,29 @@ video {
   color: #7391B7;
   font-size: larger;
   margin-bottom: 0;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
+.wwu_text p{
+  font-family: "Red Hat Display mid";
+  margin-bottom: 1rem;
+}
+
 .wwu_text span{
+
   background-color: #fff;
   border-color: #fff;
   border-width: 2px;
   border-style: solid;
     border-radius: 9999px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   color: black;
   text-decoration:underline;
   padding: 1rem;
     font-family: "Red Hat Display Heavy";
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 .projects_slide::before {
   content: "";
@@ -169,10 +185,17 @@ video {
   padding: 2rem;
   margin-left: 40vw;
   text-align: right;
+  font-size: 1.3rem;
+}
+.projects_content h3{
+    font-family: "Red Hat Display Heavy";
+    font-size: 1.9rem;
+    margin-bottom: 3rem;
 }
 
 .projects_content p {
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display" !important;
+
 }
 
 /* =========================
@@ -231,7 +254,7 @@ video {
   max-width: 26vw;
   min-height: 18vw;
   margin: 0;
-  background: #222;
+  background-color: #20252D;
   color: #f8f8f8;
   border: 2px solid #f8f8f8;
   display: flex;
@@ -306,8 +329,8 @@ video {
 ========================= */
 .about_uss {
   width: 100%;
-  height: 50vw;
-  padding: 3.5rem 3.5rem 2rem;
+ 
+  padding: 10rem 4rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -329,16 +352,16 @@ video {
 .about_uss .yap {
   width: 100%;
   display: flex;
-  gap: 2vw;
+
   justify-content: space-between;
-  padding: 2rem;
+  padding: 3rem;
   background: #20252D;
   color: #f8f8f8;
 }
 
 .about_uss .yap span {
   gap: 0;
-  max-width: 45%;
+  width: 48%;
   font-family: "Red Hat Display";
   text-align: justify;
   margin: 0;
@@ -347,13 +370,15 @@ video {
 .about_uss .yap>span>p{
   margin-top: 0;
     margin-bottom: 0;
+    font-size: 1.3rem;
 }
 
 .about_uss .yap>p {
- max-width: 45%;
+ width: 48%;
   font-family: "Red Hat Display";
   text-align: justify;
   margin: 0;
+      font-size: 1.3rem;
 }
 
 /* =========================
@@ -375,16 +400,30 @@ video {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  width:90vw ;
+  align-items: start !important;
+  width:85vw ;
+  height: 10vh;
   padding: 0;
   margin: 0;
+  font-size: 1.3rem;
+  margin: 6rem;
+  margin-top: 1rem;
+  font-family: "Red Hat Display";
+}
+.two_things div p{
+  padding: 0.5rem;
+}
+.two_things strong{
+ font-family: "Red Hat Display Heavy";
+}
+.two_things p{
+  align-self: flex-start;
 }
 .galleryy::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.25);
   z-index: 0;
 }
 
@@ -400,8 +439,8 @@ video {
 }
 
 .galleryy img {
-  width: 100%;
-  width: 132px;
+  width: 10%;
+
   padding: 1rem;
 }
 
@@ -438,6 +477,8 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
 }
 
 .two_pics .pic img {
@@ -512,4 +553,8 @@ video {
 @font-face {
   font-family: "Red Hat Display Heavy";
   src: url("/src/assets/fonts/RedHatDisplayBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Red Hat Display mid";
+  src: url("/src/assets/fonts/RedHatDisplayMedium.ttf") format("truetype");
 }

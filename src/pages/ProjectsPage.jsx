@@ -11,16 +11,20 @@ export default function Projects() {
       </header>
 
       <div className="page_content">
-        <Link to="/" className="tohome"  onClick={() => window.scrollTo(0, 0)}>
-                <FontAwesomeIcon icon={faHouse} />Home →
-        </Link>
+
 
         <div className="gallery2">
 
           {/* FIRST COLUMN (2 PROJECTS) */}
           <div className="collum">
-            <div className="card-left">
+            <div className="card-right">
                             <img src="/Projects/white_oaks.png" alt="Wellington Apartments" />
+                            <div className="holding2">
+                                      <Link to="/" className="tohome2"  onClick={() => window.scrollTo(0, 0)}>
+                <FontAwesomeIcon icon={faHouse} />Home →
+        </Link>
+
+                            
 
               <span>
 
@@ -29,13 +33,14 @@ export default function Projects() {
                 
 
               </span>
+              </div>
             </div>
                         <div className="middle-image">
               <img src="highelite_wide.png" alt="middle" />
             </div>
 
 
-            <div className="card-right">
+            <div className="card-left">
               <img src="forest.jpg" alt="forest edge" />
               <span>
                 <h2>Forest Edge</h2>

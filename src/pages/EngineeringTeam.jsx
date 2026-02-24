@@ -42,6 +42,7 @@ your full potential.</p>
     <div className="g1text">
       <h2>Architect (OAA) / Intern Architect </h2>
       <br />
+      <br />
     <p>
       Location: London, Ontario <br />
 
@@ -90,6 +91,7 @@ Experience Level: 5+ years preferred (flexible based on potential)
           <img src="team_top - Copy.png" alt="" />
           <div className="g2text">
             <h2>Intermediate Architectural Drafter/Designer</h2>
+            <br />
             <br />
           <p>
             Location: London, Ontario <br />

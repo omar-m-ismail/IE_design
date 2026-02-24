@@ -26,10 +26,13 @@
   color: #ECECEC;
 }
 
-
-.galleryyy img {
+ul,.social_links{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.galleryyy>img {
   margin-top: 2rem; /* reduced from 350px */
-  max-width: 100px;
+  max-width: 10%;
   max-height: 50vh;
   z-index: 1;
 }
@@ -74,17 +77,17 @@ ol {
 .social{
     margin: 0 !important;
     width: 33%;
-        gap: 1rem;
+        gap: 2rem;
 }
 .hours{
 margin: 0 !important;
     width: 33%;
-    gap: 1rem;
+    gap: 2rem;
 }
 .location{
 margin: 0 !important;
     width: 33%;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .social h2{
@@ -108,7 +111,7 @@ margin: 0 !important;
 .linkedin img,
 .insta img {
     margin: 0;
-  width: 20px;
+  width: 100% !important;
   height: 20px;
 }
 @font-face {

@@ -46,7 +46,7 @@ export default function Home() {
               <div>
                 <p>WE Design Smart Cities With CREATIVE STRUCTURES.</p>
                 <p>
-                  <strong>54 Years </strong> of Architectural Experience
+                  <strong>+103 Years </strong> of Combined  Architectural Experience
                 </p>
               </div>
 
@@ -102,7 +102,7 @@ export default function Home() {
               relationships with universities—including Western, UBC, UNBC, and
               the University of Toronto—as well as colleges such as Fanshawe
               and George Brown, and research institutions including BLWTL and
-              WINDEEE, ensuring continuous growth, research, and innovation.
+              WINDEEE, ensuring continuous growth, research,  and providing state-of-the-art technology worldwide.
             </p>
           </span>
         </div>
@@ -113,8 +113,8 @@ export default function Home() {
               <strong>Aura Living</strong>
             </h3>
             <p>
-              Aura Living is a thoughtfully designed mixed-use development in
-              Chatham, Ontario, combining residential living with commercial
+              Aura Living is a thoughtfully designed mixed-use development <br /> in
+              Chatham, Ontario, combining residential living with <br /> commercial
               space to enrich the surrounding urban fabric.
             </p>
           </div>
@@ -168,9 +168,11 @@ export default function Home() {
     </figure>
 
     <figure>
-      <img src="ox_cap.png" alt="Oxford Capulet Towers" />
+      <img src="gain_card.png" alt="Gainsborough Towers" />
       <div>
-        <h2>Oxford Capulet Towers</h2>
+        <h2>Gainsborough
+          <br />
+Towers</h2>
         <h6>London, ON</h6>
       </div>
     </figure>
@@ -184,15 +186,6 @@ export default function Home() {
     </figure>
 
     <figure>
-      <img src="coburg.png" alt="Cobourg CRU UNITS" />
-      <div>
-        <h2>Cobourg CRU UNITS</h2>
-        <h6>Cobourg, ON</h6>
-
-      </div>
-    </figure>
-
-    <figure>
       <img src="huron.png" alt="Huron Church" />
       <div>
         <h2>Huron Church</h2>
@@ -200,19 +193,32 @@ export default function Home() {
       </div>
     </figure>
 
+    <figure>
+      <img src="elp.webp" alt="East London Plaza" />
+      <div>
+        <h2>East London Plaza</h2>
+        <h6>london, ON</h6>
+
+      </div>
+    </figure>
+
+
+
   </div>
 
 
 
-          <Link to="/LoginPage" className="toprojects"  onClick={() => window.scrollTo(0, 0)}>
+          <Link to="/projects" className="toprojects"  onClick={() => window.scrollTo(0, 0)}>
             <h2>discover MORE about our PROJECTS →</h2>
           </Link>
         </div>
         <div className="work_with_us">
+          <span>
           <h1 className="wwu">
-work <br/>
-with us
+work </h1>
+          <h1 className="wwu">with us
           </h1>
+          </span>
           <div className="wwu_text">
           <h5>
 we Design the future
