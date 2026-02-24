@@ -20,7 +20,9 @@ export default function Footing() {
         <li>Markham ON <br /></li>
         <li>Tel: +1 (519) 878-5488 <br />
         </li>
-        <li>cs@creativestr.ca</li>
+        <li><a href="mailto:cs@creativestr.ca">
+cs@creativestr.ca
+</a></li>
         </ul>
       </div>
 

@@ -7,7 +7,6 @@ export default function Projects() {
   return (
     <div className="page">
       <header>
-        <br />
       </header>
 
       <div className="page_content">
@@ -154,9 +153,7 @@ Tower</h2>
 
         </div>
 
-        <div className="westdell">
-          <img src="westdell.png" alt="" />
-        </div>
+
       </div>
     </div>
   );

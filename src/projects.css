@@ -45,7 +45,7 @@ header {
 .collumn {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+
   width: 100%;
 
 }
@@ -76,22 +76,28 @@ header {
   flex-direction: row-reverse;
   justify-content: flex-end;
   padding-left: 5rem;
-  padding-right: 2rem;
+  padding-right: 3rem;
+  text-align: right;
 }
 
 .card-right,
 .card-right1 {
   flex-direction: row;
-  padding-left: 2rem;
+  padding-left: 3rem;
   padding-right: 5rem;
+  text-align: left;
+}
+li a{
+  color: #D8D8D8;
+  text-decoration: underline;
 }
 
 /* -------------------- IMAGES -------------------- */
 .card-left img,
 .card-right img,
 .card-right1 img {
-  width: 47.5vw;
-  height: 47.5vw;
+  width: 47vw;
+  height: 47vw;
   object-fit: cover;
   flex-shrink: 0;
   border-radius: 0;
@@ -160,7 +166,8 @@ header {
 .card-right h4,
 .card-right1 h4 {
   text-transform: uppercase;
-    margin: 0;
+  margin-bottom: 1rem;
+  font-family: "Red Hat Display mid" ;
 }
 
 .card-right p {
@@ -201,6 +208,7 @@ a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .middle-image img {
