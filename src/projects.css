@@ -75,7 +75,7 @@ header {
 .card-left {
   flex-direction: row-reverse;
   justify-content: flex-end;
-  padding-left: 5rem;
+  padding-left: 5%;
   padding-right: 3rem;
   text-align: right;
 }
@@ -83,7 +83,7 @@ header {
 .card-right,
 .card-right1 {
   flex-direction: row;
-  padding-left: 3rem;
+  padding-left: 5%;
   padding-right: 5rem;
   text-align: left;
 }
