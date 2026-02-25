@@ -14,7 +14,7 @@ export default function EngineeringTeam() {
       <div className="team_content">
   
         <div className="team_yap">
-        <img src="team_top2.jpg" alt="" />
+        <img src="team_top3.jpg" alt="" />
         <div className="holding">
         <Link to="/" className="tohome2"  onClick={() => window.scrollTo(0, 0)}>
             <FontAwesomeIcon icon={faHouse} />Home →
