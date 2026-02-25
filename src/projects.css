@@ -30,7 +30,7 @@ header {
   margin: 0;
   margin-left: 28rem;
   display: inline-block;
-  margin-bottom: 30rem;
+
 }
 
 /* -------------------- GALLERY (MAIN PAGE) -------------------- */
@@ -113,12 +113,13 @@ li a{
   flex-direction: column;
   flex: 1;
   gap: 8px;
+  height: min-content;
 }
 .holding2{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 47.5vw !important;
+  height: 44.5vw !important;
 }
 .tohome2 {
   color: #20252D !important;
@@ -167,8 +168,8 @@ li a{
 .card-right h4,
 .card-right1 h4 {
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  font-family: "Red Hat Display mid" ;
+  margin-bottom: 1.5rem;
+  font-family: "Red Hat Display Heavy" ;
 }
 
 .card-right p {
