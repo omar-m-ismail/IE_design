@@ -45,14 +45,14 @@ cs@creativestr.ca
             href="https://www.linkedin.com/company/iedesign/"
             className="linkedin"
           >
-            <img src="/linkedin.png" alt="LinkedIn" />
+            <img src={`${import.meta.env.BASE_URL}/linkedin.png`} alt="LinkedIn" />
           </a>
 
           <a
             href="https://www.instagram.com/iedesignltd"
             className="insta"
           >
-            <img src="/insta.png" alt="Instagram" />
+            <img src={`${import.meta.env.BASE_URL}/insta.png`} alt="Instagram" />
           </a>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function Projects() {
           {/* FIRST COLUMN (2 PROJECTS) */}
           <div className="collum">
             <div className="card-right">
-                            <img src="/Projects/white_oaks.png" alt="Wellington Apartments" />
+                            <img  src={`${import.meta.env.BASE_URL}/Projects/white_oaks.png`} alt="Wellington Apartments" />
                             <div className="holding2">
                                       <Link to="/" className="tohome2"  onClick={() => window.scrollTo(0, 0)}>
                 <FontAwesomeIcon icon={faHouse} />Home →
@@ -58,7 +58,7 @@ export default function Projects() {
           {/* SECOND COLUMN (3 PROJECTS) */}
           <div className="collumn">
                         <div className="card-left">
-              <img src="/Projects/meadowilly.png" alt="Meadowlily" />
+              <img  src={`${import.meta.env.BASE_URL}/Projects/meadowilly.png`} alt="Meadowlily" />
               <span>
                 <h2>Meadowlily</h2>
                 <h4>LONDON, ON</h4>
@@ -86,7 +86,7 @@ export default function Projects() {
               </span>
             </div>
             <div className="middle-image">
-              <img src="aurawide.jpg" alt="middle" />
+              <img  src={`${import.meta.env.BASE_URL}aurawide.jpg`} alt="middle" />
             </div>
           </div>
 
@@ -122,7 +122,7 @@ Tower</h2>
           {/* FOURTH COLUMN (2 PROJECTS) */}
           <div className="collumn">
             <div className="card-right">
-              <img src="/Projects/church_cru.png" alt="Huron Church CRU Units" />
+              <img  src={`${import.meta.env.BASE_URL}/Projects/church_cru.png`} alt="Huron Church CRU Units" />
               <span>
                 <h2>Huron Church CRU <br /> Units</h2>
                 <h4>Windsor, ON</h4>
