@@ -19,7 +19,7 @@ export default function Projects() {
             <div className="card-right">
                             <img  src={`${import.meta.env.BASE_URL}/Projects/white_oaks.png`} alt="Wellington Apartments" />
                             <div className="holding2">
-                                      <Link to="/" className="tohome2"  onClick={() => window.scrollTo(0, 0)}>
+                                      <Link to="/" className="tohome"  onClick={() => window.scrollTo(0, 0)}>
                 <FontAwesomeIcon icon={faHouse} />Home →
         </Link>
 
