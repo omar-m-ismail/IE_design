@@ -71,7 +71,7 @@ export default function Home() {
 
             <div className="video-overlay">
               <h1>WHERE IDEAS RISE AND DESIGN BECOMES STRUCTURE</h1>
-              <p>Aria Serene Living, London, ON</p>
+
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function Home() {
 
           <div className="two_pics">
             <div className="pic">
-              <img src="park.jpg" alt="" />
+              <img src="bend.jpg" alt="" />
               <p>
                 The project is conceived as a mid-rise masonry building,
                 featuring hollow-core slab floor systems and cast-in-place
@@ -134,7 +134,7 @@ export default function Home() {
               </p>
             </div>
             <div className="pic">
-              <img src="front.jpg" alt="" />
+              <img src="back.jpg" alt="" />
               <p>
                 With an estimated construction value of $42 million, Aura Living
                 reflects a careful balance of functionality and architectural
@@ -153,7 +153,7 @@ export default function Home() {
       <img src="highland_elite.png" alt="Highland Elite Towers" />
       <div>
         <h2>Highland Elite Towers</h2>
-        <h6>London, ON</h6>
+        <h5>London, ON</h5>
 
       </div>
     </figure>
@@ -162,7 +162,7 @@ export default function Home() {
       <img src="sou_res.png" alt="South Residential Towers" />
       <div>
         <h2>South Residential Towers</h2>
-        <h6>London, ON</h6>
+        <h5>Windsor, ON</h5>
 
       </div>
     </figure>
@@ -173,7 +173,7 @@ export default function Home() {
         <h2>Gainsborough
           <br />
 Towers</h2>
-        <h6>London, ON</h6>
+        <h5>kitchener, ON</h5>
       </div>
     </figure>
 
@@ -181,7 +181,7 @@ Towers</h2>
       <img src="meadowilly.png" alt="Meadowlily Subdivision" />
       <div>
         <h2>Meadowlily Subdivision</h2>
-        <h6>London, ON</h6>
+        <h5>vaughan, ON</h5>
       </div>
     </figure>
 
@@ -189,7 +189,7 @@ Towers</h2>
       <img src="huron.png" alt="Huron Church" />
       <div>
         <h2>Huron Church</h2>
-        <h6>Windsor, ON</h6>
+        <h5>coburg, ON</h5>
       </div>
     </figure>
 
@@ -197,7 +197,7 @@ Towers</h2>
       <img src="elp.webp" alt="East London Plaza" />
       <div>
         <h2>East London Plaza</h2>
-        <h6>london, ON</h6>
+        <h5>lucan, ON</h5>
 
       </div>
     </figure>

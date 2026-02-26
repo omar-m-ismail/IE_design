@@ -265,6 +265,12 @@ video {
   overflow: hidden;
 
 }
+.mini figure h5 { 
+  text-transform: uppercase;
+    text-align: right;
+  text-decoration: underline;
+  padding-bottom: 30px;
+}
 .video-wrapper {
   position: relative;
   width: 100%;
@@ -309,7 +315,8 @@ video {
 }
 
 .mini figure div {
-  padding: 20px;
+width: 100%;
+padding: 20px;
 }
 
 .mini figure div h2 {
@@ -317,12 +324,7 @@ video {
   font-family: "Tan Mon Cheri";
 }
 
-.mini figure div h6 {
-  text-align: right;
-  text-decoration: underline;
-  padding-bottom: 30px;
 
-}
 
 /* =========================
    ABOUT SECTION

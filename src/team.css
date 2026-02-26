@@ -39,6 +39,19 @@ body {
   display: inline-block;
   margin-bottom: 30rem;
 }
+.underline{
+  text-decoration: underline;
+  color:#fff ;
+}
+.img-overlay {
+  position: absolute;
+  left: 39vw;
+top: 82vh;
+  color: #fff;
+  text-align: start;
+  z-index: 2;
+  pointer-events: none; /* makes the video clickable */
+}
 .team_yap{
 
       align-items: flex-end;
