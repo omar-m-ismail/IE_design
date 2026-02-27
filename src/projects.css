@@ -16,7 +16,21 @@ body {
   background-color: #D8D8D8!important;
   font-family: "Red Hat Display";
 }
-
+.page .galleryyy{
+  padding-top: 2rem;
+}
+.galleryyy .tohome{
+  color: #D8D8D8 !important;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+.home_button_row{
+  display: flex;
+  width: 80%;
+  justify-content: flex-end !important;
+  align-items: flex-end !important;
+}
 /* -------------------- HEADER -------------------- */
 header {
   background-color: #D8D8D8;

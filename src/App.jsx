@@ -18,7 +18,7 @@ function App() {
     "/LoginPage",
     "/UploadProjects",
     "/AddMember",
-    "/ProjectsPage" // if you enable later
+    "/projects" // if you enable later
   ];
 
   const shouldHideFooter =

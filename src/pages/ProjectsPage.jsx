@@ -1,9 +1,32 @@
 import "../projects.css";
 import { Link } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 
 export default function Projects() {
+   useEffect(() => {
+    const elements = document.querySelectorAll(
+      ".animate, .animate2, .animate3, .delay1, .delay2"
+    );
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+  
+    elements.forEach((el) => observer.observe(el));
+  
+    return () => observer.disconnect();
+  }, []);; 
   return (
     <div className="page">
       <header>
@@ -17,7 +40,7 @@ export default function Projects() {
           {/* FIRST COLUMN (2 PROJECTS) */}
           <div className="collum">
             <div className="card-right">
-                            <img  src={`${import.meta.env.BASE_URL}/Projects/white_oaks.png`} alt="Wellington Apartments" />
+                            <img className="animate2" src={`${import.meta.env.BASE_URL}/Projects/white_oaks.png`} alt="Wellington Apartments" />
                             <div className="holding2">
                                       <Link to="/" className="tohome"  onClick={() => window.scrollTo(0, 0)}>
                 <FontAwesomeIcon icon={faHouse} />Home →
@@ -40,7 +63,7 @@ export default function Projects() {
 
 
             <div className="card-left">
-              <img src="forest.jpg" alt="forest edge" />
+              <img className="animate2" src="forest.jpg" alt="forest edge" />
               <span>
                 <h2>Forest Edge</h2>
                 <h4>london, on</h4>
@@ -58,7 +81,7 @@ export default function Projects() {
           {/* SECOND COLUMN (3 PROJECTS) */}
           <div className="collumn">
                         <div className="card-left">
-              <img  src={`${import.meta.env.BASE_URL}/Projects/meadowilly.png`} alt="Meadowlily" />
+              <img className="animate2"  src={`${import.meta.env.BASE_URL}/Projects/meadowilly.png`} alt="Meadowlily" />
               <span>
                 <h2>Meadowlily</h2>
                 <h4>LONDON, ON</h4>
@@ -67,7 +90,7 @@ export default function Projects() {
             </div>
 
             <div className="card-right">
-              <img src="southtowers.png" alt="south towers" />
+              <img className="animate2" src="southtowers.png" alt="south towers" />
               <span>
                 <h2>Southern Towers</h2>
                 <h4>LONDON, ON</h4>
@@ -78,7 +101,7 @@ export default function Projects() {
               <img src="sou_res.png" alt="middle" />
             </div>
             <div className="card-left">
-              <img src="aura2.jpg" alt="Meadowlily" />
+              <img className="animate2" src="aura2.jpg" alt="Meadowlily" />
               <span>
                 <h2>Aura Living</h2>
                 <h4>Chatham, ON</h4>
@@ -93,7 +116,7 @@ export default function Projects() {
           {/* THIRD COLUMN (2 PROJECTS + middle image) */}
           <div className="collum">
             <div className="card-right">
-              <img src="top image.png" alt="Highland Elite towers" />
+              <img className="animate2" src="top image.png" alt="Highland Elite towers" />
               <span>
                 <h2>Wellington <br />
 Apartments</h2>
@@ -105,7 +128,7 @@ Apartments</h2>
 
 
             <div className="card-left">
-              <img src="lon_west.png" alt="London West
+              <img className="animate2" src="lon_west.png" alt="London West
 Tower" />
               <span>
                 <h2>London West <br />
@@ -122,7 +145,7 @@ Tower</h2>
           {/* FOURTH COLUMN (2 PROJECTS) */}
           <div className="collumn">
             <div className="card-right">
-              <img  src={`${import.meta.env.BASE_URL}/Projects/church_cru.png`} alt="Huron Church CRU Units" />
+              <img  className="animate2" src={`${import.meta.env.BASE_URL}/Projects/church_cru.png`} alt="Huron Church CRU Units" />
               <span>
                 <h2>Huron Church CRU <br /> Units</h2>
                 <h4>Windsor, ON</h4>
@@ -134,7 +157,7 @@ Tower</h2>
             </div>
 
             <div className="card-left">
-              <img src="gains.png" alt="Hyland Office Building and CRUs" />
+              <img className="animate2" src="gains.png" alt="Hyland Office Building and CRUs" />
               <span>
                 <h2>Gainsborough <br />
 Tower</h2>
@@ -142,7 +165,7 @@ Tower</h2>
               </span>
             </div>
                         <div className="card-right">
-              <img src="York-Towers.jpg" alt="Huron Church CRU Units" />
+              <img className="animate2" src="York-Towers.jpg" alt="Huron Church CRU Units" />
               <span>
                 <h2>Downtown Skyline</h2>
                 <h4>london, ON</h4>
@@ -155,6 +178,67 @@ Tower</h2>
 
 
       </div>
+            <footer className="projects-footer">
+        <div className="galleryyy">
+          <div className="home_button_row">
+            <Link to="/" className="tohome"  onClick={() => window.scrollTo(0, 0)}>
+              <FontAwesomeIcon icon={faHouse} />Home →
+            </Link>
+
+          </div>
+          <img src="logo2.png" alt="Civil Engineering" />
+          <hr />
+      
+          <div className="roooow">
+            <div className="location">
+              <h2>location</h2>
+              <ul>
+              <li><FontAwesomeIcon icon={faLocationPin} />
+      2C-1701 Richmond Street, London, Ontario. <br /></li>
+              <li><FontAwesomeIcon icon={faLocationPin} />
+      675 Cochrane Drive East Tower 6th Floor,<br /></li>
+              <li>Markham ON <br /></li>
+              <li>Tel: +1 (519) 878-5488 <br />
+              </li>
+              <li><a href="mailto:cs@creativestr.ca">
+      cs@creativestr.ca
+      </a></li>
+              </ul>
+            </div>
+      
+            <div className="hours">
+              <h2 id="cntct">Business Hours</h2>
+              <ul>
+                <li>Monday: 8am – 5pm</li>
+                <li>Tuesday: 8am – 5pm</li>
+                <li>Wednesday: 8am – 5pm</li>
+                <li>Thursday: 8am – 5pm</li>
+                <li>Friday: 8am – 5pm</li>
+              </ul>
+            </div>
+      
+            <div className="social">
+              <h2>get social</h2>
+      
+              <div className="social_links">
+                <a
+                  href="https://www.linkedin.com/company/iedesign/"
+                  className="linkedin"
+                >
+                  <img src={`${import.meta.env.BASE_URL}/linkedin.png`} alt="LinkedIn" />
+                </a>
+      
+                <a
+                  href="https://www.instagram.com/iedesignltd"
+                  className="insta"
+                >
+                  <img src={`${import.meta.env.BASE_URL}/insta.png`} alt="Instagram" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

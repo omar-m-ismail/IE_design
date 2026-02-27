@@ -6,31 +6,32 @@ import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const [data, setData] = useState(null);
-  const miniRef = useRef(null);
+  const toRef = useRef(null);
 
 
 
   // ✅ run AFTER data is loaded
  useEffect(() => {
-  const miniElement = miniRef.current;
-  if (!miniElement) return;
+  const elements = document.querySelectorAll(
+    ".animate, .animate2, .animate3, .delay1, .delay2"
+  );
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          miniElement.classList.add("visible");
-          observer.unobserve(miniElement);
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
         }
       });
     },
     { threshold: 0.2 }
   );
 
-  observer.observe(miniElement);
+  elements.forEach((el) => observer.observe(el));
 
   return () => observer.disconnect();
-}, []); // ✅ empty dependency array
+}, []);; // ✅ empty dependency array
 
 
 
@@ -57,9 +58,9 @@ export default function Home() {
 
             </div>
           </span>
-          <h1 className="creative">CREATIVE</h1>
+          <h1 className="creative animate">CREATIVE</h1>
         </div>
-        <h2 className="structure">STRUCTURES</h2>
+        <h2 className="structure animate">STRUCTURES</h2>
       </header>
 
       <main className="home-content">
@@ -70,20 +71,20 @@ export default function Home() {
             </video>
 
             <div className="video-overlay">
-              <h1>WHERE IDEAS RISE AND DESIGN BECOMES STRUCTURE</h1>
+              <h1 className="animate3">WHERE IDEAS RISE AND DESIGN BECOMES STRUCTURE</h1>
 
             </div>
           </div>
         </div>
 
         <div className="about_uss">
-          <span className="title">
+          <span className="title animate">
             <h2>OUR </h2>
             <h2>VISION</h2>
           </span>
 
           <span className="yap">
-            <span>
+            <span className="animate delay1">
               <p>
                 We believe in the synthesis of disciplines, bringing together
                 architects, engineers, designers, planners, and researchers to
@@ -96,13 +97,9 @@ export default function Home() {
                 innovative, and practical—always tailored to meet our clients’
                 needs.
               </p>
-            </span>
-            <p>
-              Our vision is realized through practice by cultivating strong
-              relationships with universities—including Western, UBC, UNBC, and
-              the University of Toronto—as well as colleges such as Fanshawe
-              and George Brown, and research institutions including BLWTL and
-              WINDEEE, ensuring continuous growth, research,  and providing state-of-the-art technology worldwide.
+            </span >
+            <p className="animate delay2">
+Our vision is realized through practice by cultivating strong relationships with  research institutions and universities including Western, UBC, UNBC, and the University of Toronto, as well as colleges such as Fanshawe and George Brown, and research institutions including BLWTL and WINDEEE, ensuring continuous growth, research, and providing state-of-the-art technology worldwide.
             </p>
           </span>
         </div>
@@ -125,7 +122,7 @@ export default function Home() {
 
           <div className="two_pics">
             <div className="pic">
-              <img src="bend.jpg" alt="" />
+              <img className="animate2" src="bend.jpg" alt="" />
               <p>
                 The project is conceived as a mid-rise masonry building,
                 featuring hollow-core slab floor systems and cast-in-place
@@ -134,7 +131,7 @@ export default function Home() {
               </p>
             </div>
             <div className="pic">
-              <img src="back.jpg" alt="" />
+              <img className="animate2 delay1" src="back.jpg" alt="" />
               <p>
                 With an estimated construction value of $42 million, Aura Living
                 reflects a careful balance of functionality and architectural
@@ -147,9 +144,9 @@ export default function Home() {
 
         <div className="gallery">
 
-  <div className="mini" ref={miniRef}>
+  <div className="mini" >
 
-    <figure>
+    <figure className="animate">
       <img src="highland_elite.png" alt="Highland Elite Towers" />
       <div>
         <h2>Highland Elite Towers</h2>
@@ -158,7 +155,7 @@ export default function Home() {
       </div>
     </figure>
 
-    <figure>
+    <figure className="animate delay1">
       <img src="sou_res.png" alt="South Residential Towers" />
       <div>
         <h2>South Residential Towers</h2>
@@ -167,7 +164,7 @@ export default function Home() {
       </div>
     </figure>
 
-    <figure>
+    <figure className="animate delay2">
       <img src="gain_card.png" alt="Gainsborough Towers" />
       <div>
         <h2>Gainsborough
@@ -177,7 +174,7 @@ Towers</h2>
       </div>
     </figure>
 
-    <figure>
+    <figure className="animate delay3">
       <img src="meadowilly.png" alt="Meadowlily Subdivision" />
       <div>
         <h2>Meadowlily Subdivision</h2>
@@ -185,7 +182,7 @@ Towers</h2>
       </div>
     </figure>
 
-    <figure>
+    <figure className="animate delay4">
       <img src="huron.png" alt="Huron Church" />
       <div>
         <h2>Huron Church</h2>
@@ -193,7 +190,7 @@ Towers</h2>
       </div>
     </figure>
 
-    <figure>
+    <figure className="animate delay5">
       <img src="elp.webp" alt="East London Plaza" />
       <div>
         <h2>East London Plaza</h2>
@@ -220,16 +217,16 @@ work </h1>
           </h1>
           </span>
           <div className="wwu_text">
-          <h5>
+          <h5 className="animate2">
 we Design the future
           </h5>
-          <p>
+          <p className="animate2 delay1">
           At Creative Structures, we help ideas take
 shape through thoughtful design and purposeful
 execution. Start building your story with us.
           </p>
           <Link to="/EngineeringTeam"   onClick={() => window.scrollTo(0, 0)}>
-          <span className="lm_button">
+          <span className="lm_button animate2 delay2">
           learn more
           </span>
           </Link>

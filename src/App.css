@@ -33,7 +33,7 @@ html, body {
 /* =========================
    HEADER
 ========================= */
-header {
+.home header {
   width: 100%;
   background: #20252D;
 }
@@ -47,6 +47,7 @@ header {
   color: #f8f8f8;
  z-index: 1;
  padding-left: 4rem;
+
 }
 .structure{
     background: #20252D;
@@ -224,22 +225,57 @@ video {
   gap: calc(1.2rem + 1vw);
   flex: 1;
   padding: 5vw;
-  opacity: 0;
-  transform: translateX(-100px);
-  transition: opacity 1s ease, transform 1s ease;
+
   padding-right: 0;
 }
 
-.mini.visible {
+
+.animate {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 1s ease;
+}
+
+.animate.visible {
   opacity: 1;
   transform: translateX(0);
 }
-
-.mini figure {
+.animate2 {
   opacity: 0;
-  transform: translateX(-50px);
-  animation: slideCard 0.7s ease forwards;
+  transition: 1s ease;
 }
+
+.animate2.visible {
+  opacity: 1;
+}
+
+.animate3 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s ease;
+}
+
+.animate3.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay1{
+  transition-delay: 0.5s !important;
+}
+.delay2{
+  transition-delay: 1s !important;
+}
+.delay3{
+  transition-delay: 1.5s !important;
+}
+.delay4{
+  transition-delay: 2s !important;
+}
+.delay5{
+  transition-delay: 2.5s !important;
+}
+
 
 @keyframes slideCard {
   to {
@@ -346,6 +382,7 @@ padding: 20px;
   font-size: 2.5rem;
   text-transform: capitalize;
   padding-left: 3rem;
+
 }
 .about_uss .title h2{
   margin: 0;
@@ -367,12 +404,14 @@ padding: 20px;
   font-family: "Red Hat Display";
   text-align: justify;
   margin: 0;
+
 }
 
 .about_uss .yap>span>p{
   margin-top: 0;
     margin-bottom: 0;
     font-size: 1.3rem;
+
 }
 
 .about_uss .yap>p {
