@@ -40,7 +40,7 @@ export default function Projects() {
           {/* FIRST COLUMN (2 PROJECTS) */}
           <div className="collum">
             <div className="card-right">
-                            <img className="animate2" src={`${import.meta.env.BASE_URL}/Projects/white_oaks.png`} alt="Wellington Apartments" />
+                            <img className="animate2" src="white_oaks.png" alt="Wellington Apartments" />
                             <div className="holding2">
                                       <Link to="/" className="tohome"  onClick={() => window.scrollTo(0, 0)}>
                 <FontAwesomeIcon icon={faHouse} />Home →
@@ -73,7 +73,7 @@ export default function Projects() {
             </div>
 
                         <div className="middle-image">
-              <img src="forest_wide.png" alt="middle" />
+              <img src="forest_wide.webp" alt="middle" />
             </div>
 
           </div>
@@ -90,7 +90,7 @@ export default function Projects() {
             </div>
 
             <div className="card-right">
-              <img className="animate2" src="southtowers.png" alt="south towers" />
+              <img className="animate2" src="southtowers.webp" alt="south towers" />
               <span>
                 <h2>Southern Towers</h2>
                 <h4>LONDON, ON</h4>
@@ -98,10 +98,10 @@ export default function Projects() {
               </span>
             </div>
             <div className="middle-image">
-              <img src="sou_res.png" alt="middle" />
+              <img src="sou_res.webp" alt="middle" />
             </div>
             <div className="card-left">
-              <img className="animate2" src="aura2.jpg" alt="Meadowlily" />
+              <img className="animate2" src="aura2.webp" alt="Meadowlily" />
               <span>
                 <h2>Aura Living</h2>
                 <h4>Chatham, ON</h4>
@@ -109,14 +109,14 @@ export default function Projects() {
               </span>
             </div>
             <div className="middle-image">
-              <img  src={`${import.meta.env.BASE_URL}aurawide.jpg`} alt="middle" />
+              <img  src={`${import.meta.env.BASE_URL}aurawide.webp`} alt="middle" />
             </div>
           </div>
 
           {/* THIRD COLUMN (2 PROJECTS + middle image) */}
           <div className="collum">
             <div className="card-right">
-              <img className="animate2" src="top image.png" alt="Highland Elite towers" />
+              <img className="animate2" src="top image.webp" alt="Highland Elite towers" />
               <span>
                 <h2>Wellington <br />
 Apartments</h2>
@@ -128,7 +128,7 @@ Apartments</h2>
 
 
             <div className="card-left">
-              <img className="animate2" src="lon_west.png" alt="London West
+              <img className="animate2" src="lon_west.webp" alt="London West
 Tower" />
               <span>
                 <h2>London West <br />
@@ -138,7 +138,7 @@ Tower</h2>
               </span>
             </div>
                         <div className="middle-image">
-              <img src="lon_west.png" alt="middle" />
+              <img src="lon_west.webp" alt="middle" />
             </div>
           </div>
 
@@ -153,11 +153,11 @@ Tower</h2>
               </span>
             </div>
             <div className="middle-image">
-              <img src="cru_wide.png" alt="middle" />
+              <img src="cru_wide.webp" alt="middle" />
             </div>
 
             <div className="card-left">
-              <img className="animate2" src="gains.png" alt="Hyland Office Building and CRUs" />
+              <img className="animate2" src="gains.webp" alt="Hyland Office Building and CRUs" />
               <span>
                 <h2>Gainsborough <br />
 Tower</h2>
@@ -165,7 +165,7 @@ Tower</h2>
               </span>
             </div>
                         <div className="card-right">
-              <img className="animate2" src="York-Towers.jpg" alt="Huron Church CRU Units" />
+              <img className="animate2" src="York-Towers.webp" alt="Huron Church CRU Units" />
               <span>
                 <h2>Downtown Skyline</h2>
                 <h4>london, ON</h4>

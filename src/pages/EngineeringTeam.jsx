@@ -15,7 +15,7 @@ export default function EngineeringTeam() {
   
         <div className="team_yap">
           <div className="img-storage">
-        <img src="team_top3.jpg" alt="" />
+        <img src="team_top3.webp" alt="" />
                                   <div className="img-overlay">
               <h5>london Office</h5>
 
@@ -45,7 +45,7 @@ your full potential.</p>
               <h1>Our job openings</h1>
             </div>
   <div className="group1">
-    <img src="team_top.png" alt="" />
+    <img src="team_top.webp" alt="" />
     <div className="g1text">
       <h2>Architect (OAA) / Intern Architect </h2>
       <br />
@@ -97,7 +97,7 @@ cs@creativestr.ca
     </div>
   </div>
     <div className="group2">
-          <img src="team_top - Copy.png" alt="" />
+          <img src="team_top - Copy.webp" alt="" />
           <div className="g2text">
             <h2>Intermediate Architectural Drafter/Designer</h2>
             <br />
@@ -123,8 +123,8 @@ Experience Level: 1+ years preferred
             <li>Strong knowledge of concrete and steel buildings and high-rise building construction</li>
             <li>Willingness to learn state-of-the-art related technologies and work on professional and personal growth</li>
           </ul>
-          <br />
-          <br />
+
+
           <h3>Key Responsibilities</h3>
           <ul>
             <li>Develop BIM and REVIT Models for architectural Projects</li>

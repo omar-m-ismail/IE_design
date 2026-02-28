@@ -118,11 +118,11 @@ Our vision is realized through practice by cultivating strong relationships with
         </div>
 
         <div className="blueprint">
-          <img src="blueprint.png" alt="" />
+          <img src="blueprint.webp" alt="" />
 
           <div className="two_pics">
             <div className="pic">
-              <img className="animate2" src="bend.jpg" alt="" />
+              <img className="animate2" src="bend.webp" alt="" />
               <p>
                 The project is conceived as a mid-rise masonry building,
                 featuring hollow-core slab floor systems and cast-in-place
@@ -131,7 +131,7 @@ Our vision is realized through practice by cultivating strong relationships with
               </p>
             </div>
             <div className="pic">
-              <img className="animate2 delay1" src="back.jpg" alt="" />
+              <img className="animate2 delay1" src="front.webp" alt="" />
               <p>
                 With an estimated construction value of $42 million, Aura Living
                 reflects a careful balance of functionality and architectural
@@ -147,7 +147,7 @@ Our vision is realized through practice by cultivating strong relationships with
   <div className="mini" >
 
     <figure className="animate">
-      <img src="highland_elite.png" alt="Highland Elite Towers" />
+      <img src="highland_elite.webp" alt="Highland Elite Towers" />
       <div>
         <h2>Highland Elite Towers</h2>
         <h5>London, ON</h5>
@@ -156,7 +156,7 @@ Our vision is realized through practice by cultivating strong relationships with
     </figure>
 
     <figure className="animate delay1">
-      <img src="sou_res.png" alt="South Residential Towers" />
+      <img src="sou_res.webp" alt="South Residential Towers" />
       <div>
         <h2>South Residential Towers</h2>
         <h5>Windsor, ON</h5>
@@ -165,7 +165,7 @@ Our vision is realized through practice by cultivating strong relationships with
     </figure>
 
     <figure className="animate delay2">
-      <img src="gain_card.png" alt="Gainsborough Towers" />
+      <img src="gain_card.webp" alt="Gainsborough Towers" />
       <div>
         <h2>Gainsborough
           <br />
@@ -175,7 +175,7 @@ Towers</h2>
     </figure>
 
     <figure className="animate delay3">
-      <img src="meadowilly.png" alt="Meadowlily Subdivision" />
+      <img src="meadowilly.webp" alt="Meadowlily Subdivision" />
       <div>
         <h2>Meadowlily Subdivision</h2>
         <h5>vaughan, ON</h5>
@@ -183,7 +183,7 @@ Towers</h2>
     </figure>
 
     <figure className="animate delay4">
-      <img src="huron.png" alt="Huron Church" />
+      <img src="huron.webp" alt="Huron Church" />
       <div>
         <h2>Huron Church</h2>
         <h5>coburg, ON</h5>
