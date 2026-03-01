@@ -77,14 +77,17 @@ h1{
   line-height: 0.85 !important;
 }
 .vid {
+  display: flex;
+  flex-direction: row;
   padding: 2rem 9vw;
   align-items: center;
   justify-content: center;
 }
 
 video {
-  width: 100%;
-  max-width: 85vw;
+
+  width: 85vw;
+  height: 100%;
 }
 
 /* =========================
@@ -213,8 +216,7 @@ video {
   justify-content: space-between;
   align-items: center;
     background: #20252D;
-
-    min-width: 95vw;
+    min-width:100%
     
 }
 .galleryy>span{
@@ -226,11 +228,10 @@ video {
 .mini {
   display: flex;
   flex-wrap: wrap;
-  gap: calc(1.2rem + 1vw);
+  gap:1vw;
   flex: 1;
   padding: 5vw;
 
-  padding-right: 0;
 }
 
 
@@ -315,7 +316,7 @@ video {
 .video-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  width: 85vw;
   margin: 0;
   overflow: hidden;
   align-items: center;
@@ -328,7 +329,7 @@ video{
 
 .video-wrapper {
   align-self: center;
-  width: 99dvw;
+
   height: auto;
   display: block;
 }
@@ -442,7 +443,7 @@ padding: 20px;
 ========================= */
 .galleryy {
   width: 100%;
-  min-height: 85vh;
+  height: 85vh;
   padding: 0;
   margin: 0;
   background: url("/page_top.webp") center/cover no-repeat;
@@ -461,7 +462,7 @@ padding: 20px;
   height: 10vh;
   padding: 0;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: clamp(0.5rem, 1.5vw, 6rem);
   margin: 6rem;
   margin-top: 1rem;
   font-family: "Red Hat Display";
@@ -495,7 +496,7 @@ padding: 20px;
 }
 
 .galleryy img {
-  width: 10%;
+  width: clamp(10rem, 10vw , 20rem);
 
   padding: 1rem;
 }
@@ -549,7 +550,9 @@ padding: 20px;
 ========================= */
 @media (max-width: 768px) {
 
-
+  .galleryy {
+  width: 100%;
+  height: 50vh;}
 
 
   .projects_slide {
