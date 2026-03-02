@@ -165,7 +165,7 @@ Tower</h2>
               </span>
             </div>
                         <div className="card-right">
-              <img className="animate2" src="York-Towers.webp" alt="Huron Church CRU Units" />
+              <img id="york"className="animate2" src="York-Towers.webp" alt="Huron Church CRU Units" />
               <span>
                 <h2>Downtown Skyline</h2>
                 <h4>london, ON</h4>

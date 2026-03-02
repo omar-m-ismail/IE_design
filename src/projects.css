@@ -40,10 +40,10 @@ header {
 .tohome {
   color: #20252D !important;
   text-decoration: underline !important;
-  font-size: 1.5rem;
+  font-size: clamp(0.5rem,1.3vw,3rem);
   margin: 0;
-  margin-left: 30rem;
   display: inline-block;
+  text-align: end;
 
 }
 
@@ -118,6 +118,10 @@ li a{
   border-radius: 0;
 
 }
+#york{
+  object-fit: cover;
+    height: 60vw;
+}
 
 /* -------------------- TEXT -------------------- */
 .card-left span,
@@ -135,15 +139,7 @@ li a{
   justify-content: space-between;
   height: 44.5vw !important;
 }
-.tohome2 {
-  color: #20252D !important;
-  text-decoration: underline !important;
-  font-size: 1.5rem;
-  margin: 0;
-  margin-left: 30rem;
-  display: inline-block;
-  margin-bottom: 30rem;
-}
+
 .card-left span{
     align-items: flex-end;
 }
@@ -162,7 +158,7 @@ li a{
 .card-left h2,
 .card-right h2,
 .card-right1 h2 {
-  font-size: 3rem;
+  font-size: clamp(1rem,3vw,6rem);
   text-transform: uppercase;
   font-family: "Red Hat Display mid";
     margin: 0;
@@ -254,11 +250,6 @@ a {
     align-items: center;
   }
 
-  .card-left img,
-  .card-right img {
-    width: 160px;
-    height: 160px;
-  }
 }
 
 /* -------------------- FONTS -------------------- */
