@@ -436,4 +436,3 @@ async def search_members(q: Optional[str] = Query(None)):
         "count": len(results),
         "results": results
     }
-
