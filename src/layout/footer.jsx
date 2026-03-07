@@ -42,14 +42,14 @@ cs@creativestr.ca
 
         <div className="social_links">
           <a
-            href="https://www.linkedin.com/company/iedesign/"
+            href="https://www.linkedin.com/company/creativestructuresltd/"
             className="linkedin"
           >
             <img src='linkedin.png' alt="LinkedIn" />
           </a>
 
           <a
-            href="https://www.instagram.com/iedesignltd"
+            href="https://www.instagram.com/cs_creativestr"
             className="insta"
           >
             <img src='insta.png' alt="Instagram" />

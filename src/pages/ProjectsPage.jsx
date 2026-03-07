@@ -222,14 +222,14 @@ Tower</h2>
       
               <div className="social_links">
                 <a
-                  href="https://www.linkedin.com/company/iedesign/"
+                  href="https://www.linkedin.com/company/creativestructuresltd/"
                   className="linkedin"
                 >
                   <img src={`${import.meta.env.BASE_URL}linkedin.png`} alt="LinkedIn" />
                 </a>
       
                 <a
-                  href="https://www.instagram.com/iedesignltd"
+                  href="https://www.instagram.com/cs_creativestr"
                   className="insta"
                 >
                   <img src={`${import.meta.env.BASE_URL}insta.png`} alt="Instagram" />
