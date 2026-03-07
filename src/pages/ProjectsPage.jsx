@@ -81,7 +81,7 @@ export default function Projects() {
           {/* SECOND COLUMN (3 PROJECTS) */}
           <div className="collumn">
                         <div className="card-left">
-              <img className="animate2"  src={`${import.meta.env.BASE_URL}/Projects/meadowilly.png`} alt="Meadowlily" />
+              <img className="animate2"  src={`${import.meta.env.BASE_URL}Projects/meadowilly.png`} alt="Meadowlily" />
               <span>
                 <h2>Meadowlily</h2>
                 <h4>LONDON, ON</h4>
@@ -101,7 +101,7 @@ export default function Projects() {
               <img src="sou_res.webp" alt="middle" />
             </div>
             <div className="card-left">
-              <img className="animate2" src="aura2.webp" alt="Meadowlily" />
+              <img className="animate2" src="aura2.webp" alt="aura living" />
               <span>
                 <h2>Aura Living</h2>
                 <h4>Chatham, ON</h4>
@@ -145,7 +145,7 @@ Tower</h2>
           {/* FOURTH COLUMN (2 PROJECTS) */}
           <div className="collumn">
             <div className="card-right">
-              <img  className="animate2" src={`${import.meta.env.BASE_URL}/Projects/church_cru.png`} alt="Huron Church CRU Units" />
+              <img  className="animate2" src={`${import.meta.env.BASE_URL}Projects/church_cru.png`} alt="Huron Church CRU Units" />
               <span>
                 <h2>Huron Church CRU <br /> Units</h2>
                 <h4>Windsor, ON</h4>
@@ -225,14 +225,14 @@ Tower</h2>
                   href="https://www.linkedin.com/company/iedesign/"
                   className="linkedin"
                 >
-                  <img src={`${import.meta.env.BASE_URL}/linkedin.png`} alt="LinkedIn" />
+                  <img src={`${import.meta.env.BASE_URL}linkedin.png`} alt="LinkedIn" />
                 </a>
       
                 <a
                   href="https://www.instagram.com/iedesignltd"
                   className="insta"
                 >
-                  <img src={`${import.meta.env.BASE_URL}/insta.png`} alt="Instagram" />
+                  <img src={`${import.meta.env.BASE_URL}insta.png`} alt="Instagram" />
                 </a>
               </div>
             </div>
