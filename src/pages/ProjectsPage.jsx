@@ -81,7 +81,7 @@ export default function Projects() {
           {/* SECOND COLUMN (3 PROJECTS) */}
           <div className="collumn">
                         <div className="card-left">
-              <img className="animate2"  src={`${import.meta.env.BASE_URL}Projects/meadowilly.png`} alt="Meadowlily" />
+              <img className="animate2"  src={'Projects/meadowilly.png'} alt="Meadowlily" />
               <span>
                 <h2>Meadowlily</h2>
                 <h4>LONDON, ON</h4>
@@ -109,7 +109,7 @@ export default function Projects() {
               </span>
             </div>
             <div className="middle-image">
-              <img  src={`${import.meta.env.BASE_URL}aurawide.webp`} alt="middle" />
+              <img  src='aurawide.webp' alt="middle" />
             </div>
           </div>
 
@@ -145,7 +145,7 @@ Tower</h2>
           {/* FOURTH COLUMN (2 PROJECTS) */}
           <div className="collumn">
             <div className="card-right">
-              <img  className="animate2" src={`${import.meta.env.BASE_URL}Projects/church_cru.png`} alt="Huron Church CRU Units" />
+              <img  className="animate2" src='Projects/church_cru.png' alt="Huron Church CRU Units" />
               <span>
                 <h2>Huron Church CRU <br /> Units</h2>
                 <h4>Windsor, ON</h4>
