@@ -67,7 +67,7 @@ export default function Home() {
         <div className="vid">
           <div className="video-wrapper">
             <video autoPlay muted loop playsInline>
-              <source src="top_video.MP4" type="video/mp4" />
+              <source src="Top_Video.MP4" type="video/mp4" />
             </video>
 
             <div className="video-overlay">
