@@ -220,7 +220,7 @@ work </h1>
           <h5 className="animate2">
 we Design the future
           </h5>
-          <p className="animate2 delay1">
+          <p className="wwu_p animate2 delay1">
           At Creative Structures, we help ideas take
 shape through thoughtful design and purposeful
 execution. Start building your story with us.

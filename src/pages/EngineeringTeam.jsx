@@ -89,7 +89,7 @@ Experience Level: 5+ years preferred (flexible based on potential)
                 <ul>
                   <li>COVER LETTER,</li>
                   <li>RESUME AND</li>
-                  <li>SAMPLE PROJECTS RELATED TO THE IE DESIGN LINE OF WORK</li>
+                  <li>SAMPLE PROJECTS RELATED TO THE CREATIVE STRUCTURES LINE OF WORK</li>
                 </ul>
                 <h3>By email (pdf files only) to<a className="underline" href="mailto:cs@creativestr.ca">
 cs@creativestr.ca
@@ -141,7 +141,7 @@ Experience Level: 1+ years preferred
                 <ul>
                   <li>COVER LETTER,</li>
                   <li>RESUME AND</li>
-                  <li>SAMPLE PROJECTS RELATED TO THE IE DESIGN LINE OF WORK</li>
+                  <li>SAMPLE PROJECTS RELATED TO THE CREATIVE STRUCTURES LINE OF WORK</li>
                 </ul>
                 <h3>By email (pdf files only) to<a className="underline" href="mailto:cs@creativestr.ca">
 cs@creativestr.ca

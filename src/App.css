@@ -159,6 +159,7 @@ video {
   font-size: clamp(0.2rem, 2.5vh, 2rem);
   font-family: "Red Hat Display mid";
   margin-bottom: 1rem;
+  color: #20252D;
 }
 
 .wwu_text span{
@@ -538,6 +539,7 @@ padding: 20px;
   align-items: center;
   gap: 1rem;
   font-size: 1.2rem;
+  color: black ;
 }
 
 .two_pics .pic img {
