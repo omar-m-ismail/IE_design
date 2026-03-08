@@ -68,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90% !important;
+  height: 100% !important;
 }
 .g1text,.g2text{
           display: flex;

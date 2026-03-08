@@ -170,7 +170,7 @@ Our vision is realized through practice by cultivating strong relationships with
         <h2>Gainsborough
           <br />
 Towers</h2>
-        <h5>kitchener, ON</h5>
+        <h5>London, ON</h5>
       </div>
     </figure>
 
@@ -185,7 +185,7 @@ Towers</h2>
     <figure className="animate delay4">
       <img src="huron.webp" alt="Huron Church" />
       <div>
-        <h2>Huron Church</h2>
+        <h2>Windsor Church</h2>
         <h5>coburg, ON</h5>
       </div>
     </figure>
@@ -194,7 +194,7 @@ Towers</h2>
       <img src="elp.webp" alt="East London Plaza" />
       <div>
         <h2>East London Plaza</h2>
-        <h5>lucan, ON</h5>
+        <h5>London, ON</h5>
 
       </div>
     </figure>
