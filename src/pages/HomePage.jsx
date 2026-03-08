@@ -185,8 +185,8 @@ Towers</h2>
     <figure className="animate delay4">
       <img src="huron.webp" alt="Huron Church" />
       <div>
-        <h2>Windsor Church</h2>
-        <h5>coburg, ON</h5>
+        <h2>huron Church</h2>
+        <h5>Windsor, ON</h5>
       </div>
     </figure>
 
