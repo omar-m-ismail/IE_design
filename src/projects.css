@@ -138,14 +138,16 @@ li a{
   flex-direction: column;
   justify-content: space-between;
   height: 44.5vw !important;
+
 }
+.holding2 span
 
 .card-left span{
     align-items: flex-end;
 }
 
 .collum h2,
-.collum h3 {
+.collum h4 {
   color: #20252D;
 
 }
