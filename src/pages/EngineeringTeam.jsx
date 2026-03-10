@@ -17,7 +17,7 @@ export default function EngineeringTeam() {
           <div className="img-storage">
         <img src="team_top3.webp" alt="" />
                                   <div className="img-overlay">
-              <h5>london Office</h5>
+              <h5>London Office</h5>
 
             </div>
 

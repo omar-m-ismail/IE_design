@@ -194,7 +194,7 @@ Tower</h2>
               <h2>location</h2>
               <ul>
               <li><FontAwesomeIcon icon={faLocationPin} />
-      2C-1701 Richmond Street, London, Ontario. <br /></li>
+      2C-1701 Richmond Street, London, ON. <br /></li>
               <li><FontAwesomeIcon icon={faLocationPin} />
       675 Cochrane Drive East Tower 6th Floor,<br /></li>
               <li>Markham ON <br /></li>
@@ -209,11 +209,11 @@ Tower</h2>
             <div className="hours">
               <h2 id="cntct">Business Hours</h2>
               <ul>
-                <li>Monday: 8am – 5pm</li>
-                <li>Tuesday: 8am – 5pm</li>
-                <li>Wednesday: 8am – 5pm</li>
-                <li>Thursday: 8am – 5pm</li>
-                <li>Friday: 8am – 5pm</li>
+                <li>Monday: 9am – 5pm</li>
+                <li>Tuesday: 9am – 5pm</li>
+                <li>Wednesday: 9am – 5pm</li>
+                <li>Thursday: 9am – 5pm</li>
+                <li>Friday: 9am – 5pm</li>
               </ul>
             </div>
       

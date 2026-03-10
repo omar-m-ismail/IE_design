@@ -69,7 +69,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100% !important;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
 }
 .g1text,.g2text{
           display: flex;
@@ -107,8 +107,8 @@ body {
   max-width: 10vw;
 }
 .team_yap img{
-    width: 40vw;
-    height: 47.5vw;
+
+    height: 100%;
 }
 .row{
   padding-left: 1rem;
